@@ -89,12 +89,12 @@
             color: #ff6600; /* Color de enlace al pasar el mouse */
         }
 
-        /* Estilos para el encabezado y pie de página */
-        .header {
-            background-color: #ff4646; /* Fondo rosado */
-            color: white; /* Letras blancas */
-            padding: 20px;
+        header {
+            background-color: #ff4646; /* Color representativo (Índigo) */
+            color: white;
+            padding: 20px 0;
         }
+       
 
         .footer {
             background-color: #ff4646; /* Fondo rosado */
@@ -136,17 +136,52 @@
                 margin: 0 10px; /* Ajustar margen en móviles */
             }
         }
+        /* Clase para el menú de navegación */
+        .menu-navegacion {
+            display: flex;
+            justify-content: center;
+            background-color: #ff4646;
+            padding: 10px;
+        }
+
+        .menu-navegacion ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row; /* Mantener las opciones en fila */
+            gap: 20px;
+        }
+
+        .menu-navegacion ul li a {
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Estilo responsivo */
+        @media (max-width: 768px) {
+            .menu-navegacion {
+                flex-direction: row; /* Mantiene los elementos en fila en pantallas pequeñas */
+            }
+
+            .menu-navegacion ul {
+                flex-direction: row;
+            }
+        }
+        
     </style>
 </head>
 <body>
 
     <!-- Encabezado de la página con el menú de navegación -->
-    <header class="header">
-        <h1>Llaveros de MVL & DC</h1> <!-- Título de la página actual -->
+    <header>
+        <h1>Llaveros de Marvel y DC</h1> <!-- Título de la página actual -->
 
         <!-- Menú de navegación principal -->
-        <nav>
-            <ul class="header">
+        <nav class ="menu-navegacion">
+            <ul>
                 <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
                 <li><a href="productos.html">Productos</a></li> <!-- Enlace a la página de productos -->
                 <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li> <!-- Enlace a la página de sobre nosotros -->
