@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Enlaza el archivo CSS externo para estilos generales -->
+    <title>Productos</title>
+    <style>
+        /* Estilos para el contenedor de categorías de productos */
+        #categoria-container {
+            display: flex; /* Utiliza flexbox para alinear las categorías en fila */
+            justify-content: space-around; /* Espacio uniforme entre las categorías */
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay suficiente espacio */
+            margin: 20px; /* Margen alrededor del contenedor */
+        }
+
+        /* Estilo para cada categoría de producto */
+        .categoria {
+            text-align: center; /* Centra el texto en cada categoría */
+            width: 22%; /* Ancho de cada categoría; ajustable según sea necesario */
+            margin: 10px; /* Espacio entre las categorías */
+            padding: 20px; /* Espaciado interno dentro de cada categoría */
+            border: 2px solid #ddd; /* Borde ligero alrededor de la categoría */
+            border-radius: 10px; /* Bordes redondeados para un aspecto más suave */
+            background-color: #ffffff; /* Fondo blanco para las categorías */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+            transition: transform 0.3s; /* Efecto suave en la transformación al interactuar */
+        }
+
+        /* Estilo para las imágenes dentro de las categorías */
+        .categoria img {
+            max-width: 100%; /* Las imágenes no deben exceder el ancho del contenedor */
+            height: auto; /* Mantiene la proporción de las imágenes */
+            border-radius: 8px; /* Bordes redondeados para las imágenes */
+        }
+
+        /* Efecto al pasar el ratón sobre una categoría */
+        .categoria:hover {
+            transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el ratón */
+        }
+
+        /* Estilos específicos para los enlaces dentro de las categorías */
+        .categoria a {
+            display: inline-block; /* Para asegurarse de que el enlace se comporte correctamente */
+            color: #4CAF50; /* Color verde para el texto del enlace */
+            text-decoration: none; /* Sin subrayado en los enlaces */
+            font-weight: bold; /* Texto en negrita para los enlaces */
+            transition: color 0.3s; /* Transición suave para el color del enlace */
+            margin: 10px 0; /* Margen vertical para separación entre el enlace y el texto */
+        }
+
+        /* Efecto al pasar el ratón sobre los enlaces */
+        .categoria a:hover {
+            color: #FFD700; /* Cambia el color a dorado al pasar el ratón */
+            text-decoration: underline; /* Subrayado del enlace al pasar el ratón */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¡BIENVENIDO A NUESTRA TIENDA JOFRAPOP!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
+                <li><a href="productos.html">Productos</a></li> <!-- Enlace a la página de productos (esta página) -->
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li> <!-- Enlace a la página "Sobre Nosotros" -->
+            </ul>
+        </nav>
+    </header>
+
+    <section id="productos">
+        <h2 style="text-align: center;">Nuestras Categorías de Productos</h2>
+        <div id="categoria-container">
+            <div class="categoria">
+                <a href="anime.html"> <!-- Enlace a la categoría de Anime -->
+                    <img src="imagenes/onepieceproductos.jpg" alt="Llaveritos de Anime"> <!-- Imagen de la categoría -->
+                    <h3>Llaveritos de Anime</h3> <!-- Título de la categoría -->
+                </a>
+                <p>Explora nuestra colección de llaveritos de tus animes favoritos.</p> <!-- Descripción de la categoría -->
+            </div>
+            <div class="categoria">
+                <a href="marvel_dc.html"> <!-- Enlace a la categoría de Marvel y DC -->
+                    <img src="imagenes/mrvlproductos.jpg" alt="Llaveritos de Marvel y DC"> <!-- Imagen de la categoría -->
+                    <h3>Llaveritos de Marvel y DC</h3> <!-- Título de la categoría -->
+                </a>
+                <p>Consigue tus héroes favoritos de Marvel y DC en llaveritos.</p> <!-- Descripción de la categoría -->
+            </div>
+            <div class="categoria">
+                <a href="kpop.html"> <!-- Enlace a la categoría de K-Pop -->
+                    <img src="imagenes/kpoproductos.jpg" alt="Llaveritos de K-Pop"> <!-- Imagen de la categoría -->
+                    <h3>Llaveritos de K-Pop</h3> <!-- Título de la categoría -->
+                </a>
+                <p>¡Ideal para los fans del K-Pop! Descubre nuestros llaveritos.</p> <!-- Descripción de la categoría -->
+            </div>
+            <div class="categoria">
+                <a href="disney.html"> <!-- Enlace a la categoría de Disney -->
+                    <img src="imagenes/disneyyproductos.jpg" alt="Llaveritos de Disney"> <!-- Imagen de la categoría -->
+                    <h3>Llaveritos de Disney</h3> <!-- Título de la categoría -->
+                </a>
+                <p>Explora nuestra colección de llaveritos de Disney favoritos.</p> <!-- Descripción de la categoría -->
+            </div>
+        </div>
+    </section>
+
+ <!-- Pie de página -->
+<footer>
+    <p>&copy; 2024 Todos los derechos reservados.</p>
+    <div class="redes-sociales">
+        <a href="https://www.instagram.com/invites/contact/?igsh=1aifeluu4fsbq&utm_content=vu468xr" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61560951741947&mibextid=ZbWKwL" target="_blank">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href="https://wa.me/51900426676" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+    </div>
+    <p>¿Tienes preguntas? ¡Contáctanos!</p>
+    <p><a href="https://forms.gle/W35HobGPKXQcbhRU9" target="_blank" class="enlace-formulario">Enviar Mensaje</a></p>
+</footer>
+
+</body>
+</html>

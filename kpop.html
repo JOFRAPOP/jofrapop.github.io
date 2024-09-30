@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Llaveros de Kpop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2, p {
+            text-align: center;
+        }
+
+        /* Estilos mejorados para los productos */
+        h3 {
+            font-size: 1.2em;
+            color: #333;
+            margin: 10px 0;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.1em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Contenedor de categorías con tres columnas */
+        #categoria-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto; /* Centrar horizontalmente */
+        }
+
+        .categoria {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s; /* Transición suave */
+        }
+
+        .categoria:hover {
+            transform: scale(1.05); /* Agrandar levemente en hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en hover */
+        }
+
+        .categoria img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Navegación rápida de categorías */
+        .categorias {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .categorias li {
+            margin: 0 15px;
+        }
+
+        .categorias li a {
+            text-decoration: none;
+            color: #ff76ab;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .categorias li a:hover {
+            color: #ff6600;
+        }
+
+        /* Estilos para el encabezado y pie de página */
+        .header {
+            background-color: #ff76ab; /* Fondo rosado */
+            color: white; /* Letras blancas */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #ff76ab; /* Fondo rosado */
+            color: white; /* Letras blancas */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .redes-sociales a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .redes-sociales a:hover {
+            text-decoration: underline;
+        }
+
+        .enlace-formulario {
+            color: white;
+            text-decoration: none;
+        }
+
+        .enlace-formulario:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado de la página con el menú de navegación -->
+    <header class="header">
+        <h1>Llaveros de Kpop</h1>
+
+        <!-- Menú de navegación principal -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Subtítulo y descripción breve -->
+    <h2>Nuestra Colección de Llaveros de Kpop</h2>
+    <p>Descubre nuestra selección de llaveros inspirados en los integrantes de tus grupos favoritos.</p>
+
+    <!-- Opciones de navegación rápida para cambiar entre categorías -->
+    <nav>
+        <ul class="categorias">
+            <li><a href="anime.html">Anime</a></li>
+            <li><a href="kpop.html">Kpop</a></li>
+            <li><a href="marvel_dc.html">Marvel y DC</a></li>
+            <li><a href="disney.html">Disney</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenedor principal para los llaveros de Kpop -->
+    <div id="categoria-container">
+        <div class="categoria">
+            <img src="imagenes/rmbts1.webp" alt="Llavero de RM">
+            <h3>Llavero de RM</h3>
+            <p>Precio: S/.32</p>
+        </div>
+
+        <div class="categoria">
+            <img src="imagenes/jinbts1.webp" alt="Llavero de Jin">
+            <h3>Llavero de Jin</h3>
+            <p>Precio: S/.30</p>
+        </div>
+
+        <div class="categoria">
+            <img src="imagenes/sugabts1.webp" alt="Llavero de Suga">
+            <h3>Llavero de Suga</h3>
+            <p>Precio: S/.30</p>
+        </div>
+
+        <div class="categoria">
+            <img src="imagenes/jhope1.webp" alt="Llavero de J-Hope">
+            <h3>Llavero de J-Hope</h3>
+            <p>Precio: S/.30</p>
+        </div>
+
+        <div class="categoria">
+            <img src="imagenes/jiminbts1.webp" alt="Llavero de Jimin">
+            <h3>Llavero de Jimin</h3>
+            <p>Precio: S/.30</p>
+        </div>
+
+        <div class="categoria">
+            <img src="imagenes/vbts1.webp" alt="Llavero de V">
+            <h3>Llavero de V</h3>
+            <p>Precio: S/.32</p>
+        </div>
+
+        <div class="categoria">
+            <img src="imagenes/jkbts1.webp" alt="Llavero de Jungkook">
+            <h3>Llavero de Jungkook</h3>
+            <p>Precio: S/.32</p>
+        </div>
+
+        <div class="categoria">
+            <img src="imagenes/lisa1.jpg" alt="Llavero de Lisa">
+            <h3>Llavero de Lisa</h3>
+            <p>Precio: S/.32</p>
+        </div>
+
+        <div class="categoria">
+            <img src="imagenes/rose1.jpg" alt="Llavero de Rose">
+            <h3>Llavero de Rose</h3>
+            <p>Precio: S/.30</p>
+        </div>
+
+        <div class="categoria">
+            <img src="imagenes/jennie1.png" alt="Llavero de Jennie">
+            <h3>Llavero de Jennie</h3>
+            <p>Precio: S/.30</p>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>&copy; 2024 Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/invites/contact/?igsh=1aifeluu4fsbq&utm_content=vu468xr" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61560951741947&mibextid=ZbWKwL" target="_blank">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a href="https://wa.me/51900426676" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+        <p>¿Tienes preguntas? ¡Contáctanos!</p>
+        <p><a href="https://forms.gle/W35HobGPKXQcbhRU9" target="_blank" class="enlace-formulario">Enviar Mensaje</a></p>
+    </footer>
+
+</body>
+</html>

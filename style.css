@@ -1,0 +1,115 @@
+/* Reset básico para eliminar márgenes y paddings predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+}
+
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente general de la página */
+    line-height: 1.6; /* Altura de línea para mayor legibilidad */
+    background-color: #f9f9f9; /* Color de fondo claro */
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #4CAF50; /* Color verde para el fondo del encabezado */
+    color: white; /* Color de texto blanco */
+    text-align: center; /* Centrar texto */
+    padding: 20px 0; /* Espaciado interno */
+}
+
+/* Estilo para el menú de navegación */
+nav ul {
+    list-style: none; /* Elimina viñetas */
+}
+
+nav ul li {
+    display: inline; /* Elementos en línea */
+    margin: 0 15px; /* Espaciado entre los enlaces */
+}
+
+nav a {
+    color: white; /* Color de texto blanco para enlaces */
+    text-decoration: none; /* Elimina subrayado */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+/* Estilo para la sección de bienvenida */
+#bienvenida {
+    text-align: center; /* Centrar texto */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+#bienvenida p {
+    font-size: 1.2em; /* Tamaño de fuente para el párrafo */
+    color: #333; /* Color del texto */
+}
+
+/* Estilo para el carrusel de imágenes */
+.carrusel {
+    display: flex; /* Cambiado a flex para una presentación horizontal */
+    justify-content: space-around; /* Distribuye espacio entre imágenes */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+.carrusel img {
+    width: 23%; /* Ajusta el tamaño de las imágenes */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra sutil en las imágenes */
+}
+/*------------------------------------------------------------------------------------------*/
+/* Estilo para el pie de página */
+footer {
+    background-color: #4CAF50; /* Color verde para el fondo del pie de página */
+    color: white; /* Color de texto blanco */
+    text-align: center; /* Centrar texto */
+    padding: 10px 0; /* Espaciado interno */
+    position: relative; /* Posición relativa */
+    bottom: 0; /* Coloca el pie de página al final */
+    width: 100%; /* Ancho completo */
+}
+/*-----------------------------------------------------------------------------------------*/
+/* APLICA PARA ENLACES DE PIE DE PÁGINA */
+.redes-sociales a {
+    color: white; /* Color de texto blanco para enlaces */
+    text-decoration: none; /* Elimina subrayado */
+    margin: 0 10px; /* Espaciado entre los enlaces */
+}
+
+.redes-sociales a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+/*----------------------------------------------------------------------------------------*/
+/* Estilo para el enlace del formulario */
+.enlace-formulario {
+    color: #fff; /* Color blanco */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.enlace-formulario:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+/*----------------------------------------------------------------------------------------*/
+/* NUEVO: Estilos para los íconos de redes sociales en el pie de página */
+.redes-sociales {
+    margin-top: 10px; /* Espacio en la parte superior de la sección de redes sociales */
+}
+
+.redes-sociales i {
+    font-size: 24px; /* Tamaño de los íconos */
+    margin-right: 5px; /* Espacio entre ícono y texto */
+    vertical-align: middle; /* Alinea verticalmente el ícono con el texto */
+}
+
+/* Color al pasar el cursor sobre el ícono */
+.redes-sociales a:hover i {
+    color: #00aaff; /* Cambia el color del ícono al pasar el mouse */
+}
+/*----------------------------------------------------------------------------------------*/

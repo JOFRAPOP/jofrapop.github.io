@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Llaveritos Funko Pop</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Fondo claro */
+            color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #bienvenida {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.5em;
+            color: #ff76ab; /* Color del texto de bienvenida */
+        }
+
+        /* Sección del carrusel */
+        #carrusel {
+            position: relative;
+            overflow: hidden;
+            max-width: 50%;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+
+        .carrusel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carrusel img {
+            width: 100%; /* Ajusta las imágenes al contenedor */
+            border-radius: 8px;
+        }
+
+        /* Sección de productos destacados */
+        #productos-destacados {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+        }
+
+        .producto {
+            display: inline-block;
+            width: 23%; /* Ajuste para que quepan 4 productos */
+            margin: 1%;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .producto:hover {
+            transform: scale(1.05); /* Agrandar en hover */
+        }
+
+        .producto img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+
+        .redes-sociales a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .redes-sociales a:hover {
+            text-decoration: underline;
+        }
+
+        .testimonios {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .testimonio {
+            font-style: italic;
+            color: #555;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>¡BIENVENIDO A NUESTRA TIENDA JOFRAPOP!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="bienvenida">
+        <p>¡Descubre los Funkos más vendidos y coleccionables de tus personajes favoritos!</p>
+    </section>
+
+   <!-- Sección del carrusel con 7 imágenes -->
+<section id="carrusel">
+    <div class="carrusel">
+        <img src="imagenes/luffy1.jpg" alt="Luffy Funko">
+        <img src="imagenes/batman1.webp" alt="Batman Funko">
+        <img src="imagenes/spidermanmorales1.jpg" alt="Spiderman Morales Funko">
+        <img src="imagenes/zoro1.jpg" alt="Zoro Funko">
+        <img src="imagenes/jinbts1.webp" alt="Jin Funko"> <!-- Nuevo producto de anime -->
+        <img src="imagenes/stich1.webp" alt="Stich Funko"> <!-- Nuevo producto de anime -->
+        <img src="imagenes/flash1.webp" alt="Flash Funko"> <!-- Nuevo producto -->
+    </div>
+</section>
+
+
+    <!-- Sección de productos destacados -->
+    <section id="productos-destacados">
+        <h2>Productos Destacados</h2>
+        <div class="producto">
+            <img src="imagenes/luffy1.jpg" alt="Luffy Funko">
+            <h3>Luffy Funko</h3>
+            <p>Precio: S/.32</p>
+        </div>
+        <div class="producto">
+            <img src="imagenes/batman1.webp" alt="Batman Funko">
+            <h3>Batman Funko</h3>
+            <p>Precio: S/.32</p>
+        </div>
+        <div class="producto">
+            <img src="imagenes/spidermanmorales1.jpg" alt="Spiderman Morales Funko">
+            <h3>Spiderman Morales Funko</h3>
+            <p>Precio: S/.30</p>
+        </div>
+        <div class="producto">
+            <img src="imagenes/zoro1.jpg" alt="Zoro Funko">
+            <h3>Zoro Funko</h3>
+            <p>Precio: S/.30</p>
+        </div>
+    </section>
+
+    <!-- Sección de testimonios -->
+    <section class="testimonios">
+        <h2>Testimonios de Clientes</h2>
+        <p class="testimonio">"Me encantan los funkos de JoFraPop, ¡siempre traen los más exclusivos!" - Kris</p>
+        <p class="testimonio">"Un servicio excepcional y productos de calidad." - Ana</p>
+        <p class="testimonio">"Compré un funko de Zoro y llegó en perfectas condiciones." - Olga</p>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/invites/contact/?igsh=1aifeluu4fsbq&utm_content=vu468xr" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61560951741947&mibextid=ZbWKwL" target="_blank">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a href="https://wa.me/51900426676" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+        <p>¿Tienes preguntas? ¡Contáctanos!</p>
+        <p><a href="https://forms.gle/W35HobGPKXQcbhRU9" target="_blank" class="enlace-formulario">Enviar Mensaje</a></p>
+    </footer>
+
+    <script>
+        let index = 0;
+        const images = document.querySelectorAll('#carrusel img');
+        const totalImages = images.length;
+
+        function showNextImage() {
+            images[index].style.display = 'none'; // Ocultar la imagen actual
+            index = (index + 1) % totalImages; // Cambiar al siguiente índice
+            images[index].style.display = 'block'; // Mostrar la siguiente imagen
+        }
+
+        // Inicializar el carrusel mostrando solo la primera imagen
+        images.forEach((img, idx) => {
+            img.style.display = idx === 0 ? 'block' : 'none';
+        });
+
+        // Cambiar imagen cada 3 segundos
+        setInterval(showNextImage, 3000);
+    </script>
+
+</body>
+</html>
