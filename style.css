@@ -23,6 +23,7 @@ header {
 /* Estilo para el menú de navegación */
 nav ul {
     list-style: none; /* Elimina viñetas */
+    padding: 0; /* Elimina padding predeterminado */
 }
 
 nav ul li {
@@ -106,11 +107,14 @@ footer {
     text-align: center; /* Centrar texto */
     padding: 10px 0; /* Espaciado interno */
     position: relative; /* Posición relativa */
-    bottom: 0; /* Coloca el pie de página al final */
     width: 100%; /* Ancho completo */
 }
 
-/* APLICA PARA ENLACES DE PIE DE PÁGINA */
+/* Estilos para enlaces de redes sociales en el pie de página */
+.redes-sociales {
+    margin-top: 10px; /* Espacio en la parte superior de la sección de redes sociales */
+}
+
 .redes-sociales a {
     color: white; /* Color de texto blanco para enlaces */
     text-decoration: none; /* Elimina subrayado */
@@ -132,10 +136,6 @@ footer {
 }
 
 /* NUEVO: Estilos para los íconos de redes sociales en el pie de página */
-.redes-sociales {
-    margin-top: 10px; /* Espacio en la parte superior de la sección de redes sociales */
-}
-
 .redes-sociales i {
     font-size: 24px; /* Tamaño de los íconos */
     margin-right: 5px; /* Espacio entre ícono y texto */
@@ -192,3 +192,4 @@ footer {
         margin: 5px 0; /* Espacio entre los enlaces */
     }
 }
+
