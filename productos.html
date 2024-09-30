@@ -70,14 +70,12 @@
         nav ul {
             list-style-type: none; /* Elimina las viñetas de la lista */
             padding: 0; /* Elimina el padding */
-            display: flex; /* Usa flexbox para la navegación */
+            display: flex; /* Usa flexbox para la navegación en línea */
             justify-content: center; /* Centra los enlaces */
-            flex-wrap: wrap; /* Permite que los enlaces se envuelvan en múltiples líneas si es necesario */
+            flex-wrap: nowrap; /* Fuerza a que los enlaces estén siempre en una sola línea */
         }
 
-        nav ul li {
-            margin: 0 15px; /* Espacio horizontal entre los enlaces */
-        }
+        
 
         /* Estilos para el footer */
         footer {
@@ -110,12 +108,7 @@
         /* Media query para dispositivos móviles */
         @media (max-width: 600px) {
             nav ul {
-                flex-direction: column; /* Cambia la dirección de los enlaces a vertical */
-                align-items: center; /* Centra los enlaces en el contenedor */
-            }
-
-            nav ul li {
-                margin: 5px 0; /* Espacio vertical entre los enlaces */
+                flex-wrap: nowrap; /* Mantén los enlaces en una fila en pantallas pequeñas */
             }
 
             /* Ajustes para el contenedor de categorías */
@@ -180,20 +173,12 @@
     <footer>
         <p>&copy; 2024 Todos los derechos reservados.</p>
         <div class="redes-sociales">
-            <a href="https://www.instagram.com/invites/contact/?igsh=1aifeluu4fsbq&utm_content=vu468xr" target="_blank">
-                <i class="fab fa-instagram"></i> Instagram
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=61560951741947&mibextid=ZbWKwL" target="_blank">
-                <i class="fab fa-facebook"></i> Facebook
-            </a>
-            <a href="https://wa.me/51900426676" target="_blank">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
         </div>
-        <p>¿Tienes preguntas? ¡Contáctanos!</p>
-        <p><a href="https://forms.gle/W35HobGPKXQcbhRU9" target="_blank" class="enlace-formulario">Enviar Mensaje</a></p>
+        <p><a class="enlace-formulario" href="formulario.html">Contáctanos</a></p>
     </footer>
 </body>
 </html>
-
 
