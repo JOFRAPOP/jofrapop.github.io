@@ -50,7 +50,7 @@
         /* Contenedor de categorías con tres columnas */
         #categoria-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Adaptar columnas automáticamente */
             gap: 20px;
             padding: 20px;
             max-width: 1200px;
@@ -84,6 +84,7 @@
             list-style: none;
             padding: 0;
             margin-bottom: 20px;
+            flex-wrap: wrap; /* Permitir que los elementos se ajusten en varias filas */
         }
 
         .categorias li {
@@ -114,6 +115,16 @@
             margin: 0 10px;
         }
 
+        /* Media Queries para dispositivos móviles */
+        @media (max-width: 600px) {
+            h2 {
+                font-size: 1.5em;
+            }
+
+            p, h3 {
+                font-size: 1em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -191,23 +202,24 @@
         </div>
     </div>
 
-    <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2024 Todos los derechos reservados.</p>
-        <div class="redes-sociales">
-            <a href="https://www.instagram.com/invites/contact/?igsh=1aifeluu4fsbq&utm_content=vu468xr" target="_blank">
-                <i class="fab fa-instagram"></i> Instagram
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=61560951741947&mibextid=ZbWKwL" target="_blank">
-                <i class="fab fa-facebook"></i> Facebook
-            </a>
-            <a href="wa.me/51900426676" target="_blank">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
-        </div>
-        <p>¿Tienes preguntas? ¡Contáctanos!</p>
-        <p><a href="https://forms.gle/W35HobGPKXQcbhRU9" target="_blank" class="enlace-formulario">Enviar Mensaje</a></p>
-    </footer>
+ <!-- Pie de página -->
+ <footer class="footer">
+    <p>&copy; 2024 Todos los derechos reservados.</p>
+    <div class="redes-sociales">
+        <a href="https://www.instagram.com/invites/contact/?igsh=1aifeluu4fsbq&utm_content=vu468xr" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61560951741947&mibextid=ZbWKwL" target="_blank">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href="https://wa.me/51900426676" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+    </div>
+    <p>¿Tienes preguntas? ¡Contáctanos!</p>
+    <p><a href="https://forms.gle/W35HobGPKXQcbhRU9" target="_blank" class="enlace-formulario">Enviar Mensaje</a></p>
+</footer>
 
 </body>
 </html>
+
