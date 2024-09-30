@@ -1,206 +1,198 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css"> <!-- Enlaza el archivo CSS externo -->
-    <title>Sobre Nosotros - Llaveritos Funko Pop</title>
-    <style>
-        header h1 {
-            color: white; /* Color del título */
-            margin: 0; /* Sin margen */
-        }
+/* Reset básico para eliminar márgenes y paddings predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+}
 
-        nav ul {
-            list-style-type: none; /* Sin viñetas */
-            padding: 0; /* Sin padding */
-        }
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente general de la página */
+    line-height: 1.6; /* Altura de línea para mayor legibilidad */
+    background-color: #f9f9f9; /* Color de fondo claro */
+}
 
-        nav ul li {
-            display: inline; /* Mostrar en línea */
-            margin: 0 15px; /* Espaciado entre los enlaces */
-        }
+/* Estilo para el encabezado */
+header {
+    background-color: #4CAF50; /* Color verde para el fondo del encabezado */
+    color: white; /* Color de texto blanco */
+    text-align: center; /* Centrar texto */
+    padding: 20px 0; /* Espaciado interno */
+  
+}
 
-        nav a {
-            color: white; /* Color de los enlaces */
-            text-decoration: none; /* Sin subrayado */
-        }
+nav ul {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+    display: flex; /* Usar flexbox para el layout */
+    flex-direction: row; /* Disposición horizontal */
+    justify-content: center; /* Centrar elementos horizontalmente */
+}
 
-        nav a:hover {
-            color: #FFD700; /* Cambia el color al pasar el cursor */
-            text-decoration: underline; /* Subraya los enlaces al pasar el cursor */
-        }
+nav ul li {
+    margin: 0 15px; /* Espaciado entre los enlaces */
+}
 
-        /* Estilos para la sección sobre nosotros */
-        #sobre-nosotros {
-            display: flex; /* Usar flexbox para el layout */
-            align-items: center; /* Centrar verticalmente */
-            justify-content: center; /* Centrar horizontalmente */
-            flex-direction: row; /* Alinear elementos en fila por defecto */
-            padding: 20px; /* Espaciado interno */
-            background-color: #f4f4f4; /* Color de fondo */
-            margin: 20px; /* Margen alrededor */
-            border-radius: 8px; /* Bordes redondeados */
-        }
 
-        #sobre-nosotros img {
-            max-width: 100%; /* Ancho máximo de la imagen */
-            height: auto; /* Altura automática para mantener la proporción */
-            margin-right: 20px; /* Espacio a la derecha de la imagen */
-            border-radius: 8px; /* Bordes redondeados de la imagen */
-        }
 
-        /* Estilos para la misión y visión */
-        .mision-vision {
-            display: flex; /* Usar flexbox para alinear elementos */
-            justify-content: center; /* Centrar elementos horizontalmente */
-            align-items: flex-start; /* Alinear elementos en la parte superior */
-            margin-top: 30px; /* Margen superior */
-            padding: 20px; /* Espaciado interno */
-            background-color: #f1f1f1; /* Color de fondo */
-            border-radius: 8px; /* Bordes redondeados */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de profundidad */
-        }
+nav a {
+    color: white; /* Color de texto blanco para enlaces */
+    text-decoration: none; /* Elimina subrayado */
+}
 
-        .mision-vision div {
-            flex: 1; /* Cada sección ocupa el mismo espacio */
-            margin: 0 40px; /* Margen lateral aumentado */
-            text-align: center; /* Centrar texto */
-        }
+nav a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
 
-        .mision-vision h3 {
-            color: #070707; /* Color del encabezado */
-            font-size: 22px; /* Tamaño de fuente del encabezado */
-            margin-bottom: 10px; /* Margen inferior */
-        }
+/* Estilo para la sección de bienvenida */
+#bienvenida {
+    text-align: center; /* Centrar texto */
+    margin: 20px 0; /* Margen superior e inferior */
+}
 
-        .mision-vision p {
-            color: #555; /* Color del texto */
-            line-height: 1.6; /* Espaciado entre líneas */
-            font-size: 16px; /* Tamaño de fuente */
-        }
+#bienvenida p {
+    font-size: 1.2em; /* Tamaño de fuente para el párrafo */
+    color: #333; /* Color del texto */
+}
 
-        /* Estilos para el pie de página */
-        footer {
-            background-color: #4CAF50; /* Color de fondo */
-            color: white; /* Color del texto */
-            text-align: center; /* Centrar texto */
-            padding: 10px; /* Espaciado interno */
-        }
+/* Estilo para el carrusel de imágenes */
+#carrusel {
+    position: relative;
+    overflow: hidden;
+    max-width: 50%;
+    margin: 20px auto;
+    border-radius: 8px;
+}
 
-        /* Estilos para la sección de contacto */
-        .contacto {
-            margin-top: 30px; /* Margen superior */
-            padding: 20px; /* Espaciado interno */
-            background-color: #f1f1f1; /* Color de fondo */
-            border-radius: 8px; /* Bordes redondeados */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de profundidad */
-        }
+.carrusel {
+    display: flex; /* Cambiado a flex para una presentación horizontal */
+    transition: transform 0.5s ease-in-out; /* Transición suave */
+}
 
-        .contacto h3 {
-            color: #030303; /* Color del encabezado */
-            margin-bottom: 10px; /* Margen inferior */
-        }
+.carrusel img {
+    width: 100%; /* Ajusta las imágenes al contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+}
 
-        .contacto ul {
-            list-style-type: none; /* Sin viñetas */
-            padding: 0; /* Sin padding */
-            color: #555; /* Color del texto */
-        }
+/* Sección de productos destacados */
+#productos-destacados {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
 
-        .contacto li {
-            margin: 5px 0; /* Espaciado entre elementos de la lista */
-        }
+.producto {
+    display: inline-block;
+    width: 23%; /* Ajuste para que quepan 4 productos */
+    margin: 1%;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s; /* Transición suave */
+}
 
-        /* Estilos para redes sociales en pie de página */
-        .redes-sociales {
-            display: flex;
-            justify-content: center;
-            gap: 20px; /* Espacio entre los íconos */
-            margin: 10px 0;
-        }
+.producto:hover {
+    transform: scale(1.05); /* Agrandar en hover */
+}
 
-        .redes-sociales a {
-            color: white; /* Color de los íconos */
-            font-size: 18px; /* Tamaño de los íconos */
-        }
+.producto img {
+    max-width: 100%;
+    border-radius: 8px;
+}
 
-        .redes-sociales a:hover {
-            color: #FFD700; /* Cambia el color al pasar el cursor */
-        }
+/* Estilo para el pie de página */
+footer {
+    background-color: #4CAF50; /* Color verde para el fondo del pie de página */
+    color: white; /* Color de texto blanco */
+    text-align: center; /* Centrar texto */
+    padding: 10px 0; /* Espaciado interno */
+    position: relative; /* Posición relativa */
+    width: 100%; /* Ancho completo */
+}
 
-        /* Estilos responsivos */
-        @media (max-width: 768px) {
-            #sobre-nosotros {
-                flex-direction: column; /* Cambia a columna en pantallas pequeñas */
-                text-align: center; /* Centra el texto */
-            }
+/* Estilos para enlaces de redes sociales en el pie de página */
+.redes-sociales {
+    margin-top: 10px; /* Espacio en la parte superior de la sección de redes sociales */
+}
 
-            #sobre-nosotros img {
-                margin-right: 0; /* Sin margen a la derecha en pantallas pequeñas */
-                margin-bottom: 20px; /* Espacio inferior en pantallas pequeñas */
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>¡BIENVENIDO A JOFRAPOP!</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-            </ul>
-        </nav>
-    </header>
+.redes-sociales a {
+    color: white; /* Color de texto blanco para enlaces */
+    text-decoration: none; /* Elimina subrayado */
+    margin: 0 10px; /* Espaciado entre los enlaces */
+}
 
-    <section id="sobre-nosotros">
-        <img src="imagenes/jofra1.jpg" alt="Descripción de la imagen" />
-        <div>
-            <h2>Sobre Nosotros</h2>
-            <p>Somos un pequeño emprendimiento de Chiclayo, dedicados a ofrecerte los mejores llaveritos de colección. A pesar de tener poca experiencia, estamos comprometidos en construir una historia que celebre el coleccionismo y la pasión por nuestros productos. ¡Pronto tendrás más información sobre nosotros!</p>
-        </div>
-    </section>
+.redes-sociales a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
 
-    <div class="mision-vision">
-        <div>
-            <h3>Misión</h3>
-            <p>Proporcionar productos de calidad que alegren la vida de nuestros clientes, fomentando la cultura del coleccionismo.</p>
-        </div>
-        <div>
-            <h3>Visión</h3>
-            <p>Ser la tienda líder en llaveritos de colección, reconocida por nuestro compromiso con la calidad y el servicio al cliente.</p>
-        </div>
-    </div>
+/* Estilo para el enlace del formulario */
+.enlace-formulario {
+    color: #fff; /* Color blanco */
+    font-weight: bold; /* Texto en negrita */
+}
 
-    <div class="contacto">
-        <h3>Si no puedes ingresar a los enlaces contáctanos en las siguientes redes:</h3>
-        <ul>
-            <li><strong>Facebook:</strong> <i class="fab fa-facebook"></i> JoFraPop</li>
-            <li><strong>WhatsApp:</strong> <i class="fab fa-whatsapp"></i> 900426676</li>
-            <li><strong>Instagram:</strong> <i class="fab fa-instagram"></i> @JoFraPop</li>
-        </ul>
-    </div>
+.enlace-formulario:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
 
-      <!-- Pie de página -->
-      <footer>
-        <p>&copy; 2024 Todos los derechos reservados.</p>
-        <div class="redes-sociales">
-            <a href="https://www.instagram.com/invites/contact/?igsh=1aifeluu4fsbq&utm_content=vu468xr" target="_blank">
-                <i class="fab fa-instagram"></i> Instagram
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=61560951741947&mibextid=ZbWKwL" target="_blank">
-                <i class="fab fa-facebook"></i> Facebook
-            </a>
-            <a href="https://wa.me/51900426676" target="_blank">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
-        </div>
-        <p>¿Tienes preguntas? ¡Contáctanos!</p>
-        <p><a href="https://forms.gle/W35HobGPKXQcbhRU9" target="_blank" class="enlace-formulario">Enviar Mensaje</a></p>
-    </footer>
-</body>
-</html>
+/* NUEVO: Estilos para los íconos de redes sociales en el pie de página */
+.redes-sociales i {
+    font-size: 24px; /* Tamaño de los íconos */
+    margin-right: 5px; /* Espacio entre ícono y texto */
+    vertical-align: middle; /* Alinea verticalmente el ícono con el texto */
+}
 
+/* Color al pasar el cursor sobre el ícono */
+.redes-sociales a:hover i {
+    color: #00aaff; /* Cambia el color del ícono al pasar el mouse */
+}
+
+/* Estilo para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    /* Ajuste para el encabezado */
+    header {
+        padding: 10px 0;
+        font-size: 1.2em; /* Reducir el tamaño del texto */
+    }
+
+    /* Ajustes en la navegación para que se apilen los enlaces */
+    nav ul {
+        text-align: center; /* Centra los enlaces */
+    }
+
+    nav ul li {
+        display: block; /* Los enlaces se apilan verticalmente */
+        margin: 10px 0; /* Espacio entre enlaces */
+    }
+
+    /* Ajuste en la sección de bienvenida */
+    #bienvenida p {
+        font-size: 1em; /* Tamaño de fuente reducido */
+        padding: 0 10px; /* Agregar algo de padding para dar espacio en pantallas pequeñas */
+    }
+
+    /* Ajuste en el carrusel de imágenes */
+    .carrusel {
+        flex-direction: column; /* Apila las imágenes en lugar de alinearlas horizontalmente */
+        align-items: center; /* Centra las imágenes */
+    }
+
+    .carrusel img {
+        width: 80%; /* Las imágenes ocupan más espacio en el móvil */
+        margin-bottom: 10px; /* Espacio entre las imágenes */
+    }
+
+    /* Ajustes en el pie de página */
+    footer {
+        font-size: 0.9em; /* Tamaño de texto más pequeño */
+    }
+
+    .redes-sociales a {
+        display: block; /* Los enlaces se apilan verticalmente */
+        margin: 5px 0; /* Espacio entre los enlaces */
+    }
+}
