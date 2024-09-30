@@ -51,18 +51,54 @@ nav a:hover {
 }
 
 /* Estilo para el carrusel de imágenes */
+#carrusel {
+    position: relative;
+    overflow: hidden;
+    max-width: 50%;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
 .carrusel {
     display: flex; /* Cambiado a flex para una presentación horizontal */
-    justify-content: space-around; /* Distribuye espacio entre imágenes */
-    margin: 20px 0; /* Margen superior e inferior */
+    transition: transform 0.5s ease-in-out; /* Transición suave */
 }
 
 .carrusel img {
-    width: 23%; /* Ajusta el tamaño de las imágenes */
+    width: 100%; /* Ajusta las imágenes al contenedor */
     border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra sutil en las imágenes */
 }
-/*------------------------------------------------------------------------------------------*/
+
+/* Sección de productos destacados */
+#productos-destacados {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.producto {
+    display: inline-block;
+    width: 23%; /* Ajuste para que quepan 4 productos */
+    margin: 1%;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s; /* Transición suave */
+}
+
+.producto:hover {
+    transform: scale(1.05); /* Agrandar en hover */
+}
+
+.producto img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
 /* Estilo para el pie de página */
 footer {
     background-color: #4CAF50; /* Color verde para el fondo del pie de página */
@@ -73,7 +109,7 @@ footer {
     bottom: 0; /* Coloca el pie de página al final */
     width: 100%; /* Ancho completo */
 }
-/*-----------------------------------------------------------------------------------------*/
+
 /* APLICA PARA ENLACES DE PIE DE PÁGINA */
 .redes-sociales a {
     color: white; /* Color de texto blanco para enlaces */
@@ -85,7 +121,6 @@ footer {
     text-decoration: underline; /* Subrayado al pasar el cursor */
 }
 
-/*----------------------------------------------------------------------------------------*/
 /* Estilo para el enlace del formulario */
 .enlace-formulario {
     color: #fff; /* Color blanco */
@@ -96,7 +131,6 @@ footer {
     text-decoration: underline; /* Subrayado al pasar el cursor */
 }
 
-/*----------------------------------------------------------------------------------------*/
 /* NUEVO: Estilos para los íconos de redes sociales en el pie de página */
 .redes-sociales {
     margin-top: 10px; /* Espacio en la parte superior de la sección de redes sociales */
@@ -112,7 +146,7 @@ footer {
 .redes-sociales a:hover i {
     color: #00aaff; /* Cambia el color del ícono al pasar el mouse */
 }
-/*----------------------------------------------------------------------------------------*/
+
 /* Estilo para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
     /* Ajuste para el encabezado */
@@ -157,117 +191,4 @@ footer {
         display: block; /* Los enlaces se apilan verticalmente */
         margin: 5px 0; /* Espacio entre los enlaces */
     }
-}
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4; /* Fondo claro */
-    color: #333;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#bienvenida {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 1.5em;
-    color: #ff76ab; /* Color del texto de bienvenida */
-}
-
-/* Sección del carrusel */
-#carrusel {
-    position: relative;
-    overflow: hidden;
-    max-width: 50%;
-    margin: 20px auto;
-    border-radius: 8px;
-}
-
-.carrusel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carrusel img {
-    width: 100%; /* Ajusta las imágenes al contenedor */
-    border-radius: 8px;
-}
-
-/* Sección de productos destacados */
-#productos-destacados {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
-}
-
-.producto {
-    display: inline-block;
-    width: 23%; /* Ajuste para que quepan 4 productos */
-    margin: 1%;
-    text-align: center;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-}
-
-.producto:hover {
-    transform: scale(1.05); /* Agrandar en hover */
-}
-
-.producto img {
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-/* Redes sociales */
-.redes-sociales {
-    margin: 10px 0;
-}
-
-.redes-sociales a {
-    margin: 0 10px;
-    color: white; /* Color de los iconos */
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-.redes-sociales i {
-    margin-right: 5px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #4CAF50;
-    color: white;
-}
-
-.enlace-formulario {
-    color: white;
-    text-decoration: none;
-}
-
-.enlace-formulario:hover {
-    text-decoration: underline;
 }
