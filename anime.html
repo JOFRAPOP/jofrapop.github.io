@@ -125,6 +125,45 @@
                 font-size: 1em;
             }
         }
+     /* Clase para el menú de navegación */
+     .menu-navegacion {
+            display: flex; /* Mantiene los elementos en línea (horizontalmente) */
+            justify-content: center; /* Centra el menú horizontalmente */
+            background-color: #4B0082; /* Color de fondo del menú */
+            padding: 10px; /* Añade espacio alrededor del menú */
+        }
+
+        .menu-navegacion ul {
+            list-style-type: none; /* Elimina las viñetas de la lista */
+            margin: 0;
+            padding: 0;
+            display: flex; /* Mantiene los elementos en línea */
+            gap: 20px; /* Espaciado entre los elementos del menú */
+        }
+
+        .menu-navegacion ul li a {
+            color: white; /* Color del texto */
+            padding: 10px 20px; /* Espaciado dentro de los enlaces */
+            font-size: 18px; /* Tamaño de letra */
+            transition: background-color 0.3s ease; /* Transición suave en hover */
+        }
+
+        /* Estilo responsivo */
+        @media (max-width: 768px) {
+            .menu-navegacion {
+                flex-direction: column; /* Coloca los elementos en columna en pantallas pequeñas */
+            }
+            
+            .menu-navegacion ul {
+                flex-direction: column; /* Asegura que los elementos del menú estén en vertical */
+                align-items: center; /* Centra los elementos del menú en pantallas pequeñas */
+            }
+            
+            .menu-navegacion ul li a {
+                width: 100%; /* Los enlaces ocupan todo el ancho disponible */
+                text-align: center; /* Alinea el texto al centro */
+            }
+        }
     </style>
 </head>
 <body>
