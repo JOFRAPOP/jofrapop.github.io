@@ -1,116 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre los mejores Funkos Pop de tus personajes favoritos en JoFraPop, tienda de coleccionables.">
+    <meta name="keywords" content="Funkos, Funko Pop, coleccionables, tienda, productos exclusivos">
+    <title>Llaveritos Funko Pop</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Llaveritos Funko Pop</title>
-    <style>
-        /* Estilos generales */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4; /* Fondo claro */
-            color: #333;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        #bienvenida {
-            text-align: center;
-            margin: 20px 0;
-            font-size: 1.5em;
-            color: #ff76ab; /* Color del texto de bienvenida */
-        }
-
-        /* Sección del carrusel */
-        #carrusel {
-            position: relative;
-            overflow: hidden;
-            max-width: 50%;
-            margin: 20px auto;
-            border-radius: 8px;
-        }
-
-        .carrusel {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .carrusel img {
-            width: 100%; /* Ajusta las imágenes al contenedor */
-            border-radius: 8px;
-        }
-
-        /* Sección de productos destacados */
-        #productos-destacados {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
-        }
-
-        .producto {
-            display: inline-block;
-            width: 23%; /* Ajuste para que quepan 4 productos */
-            margin: 1%;
-            text-align: center;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            padding: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s;
-        }
-
-        .producto:hover {
-            transform: scale(1.05); /* Agrandar en hover */
-        }
-
-        .producto img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-
-
-        .redes-sociales a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        .redes-sociales a:hover {
-            text-decoration: underline;
-        }
-
-        .testimonios {
-            margin: 20px 0;
-            text-align: center;
-        }
-
-        .testimonio {
-            font-style: italic;
-            color: #555;
-            margin: 10px 0;
-        }
-    </style>
+    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
 
     <header>
@@ -128,40 +30,40 @@
         <p>¡Descubre los Funkos más vendidos y coleccionables de tus personajes favoritos!</p>
     </section>
 
-   <!-- Sección del carrusel con 7 imágenes -->
-<section id="carrusel">
-    <div class="carrusel">
-        <img src="imagenes/luffy1.jpg" alt="Luffy Funko">
-        <img src="imagenes/batman1.webp" alt="Batman Funko">
-        <img src="imagenes/spidermanmorales1.jpg" alt="Spiderman Morales Funko">
-        <img src="imagenes/zoro1.jpg" alt="Zoro Funko">
-        <img src="imagenes/jinbts1.webp" alt="Jin Funko"> <!-- Nuevo producto de anime -->
-        <img src="imagenes/stich1.webp" alt="Stich Funko"> <!-- Nuevo producto de anime -->
-        <img src="imagenes/flash1.webp" alt="Flash Funko"> <!-- Nuevo producto -->
-    </div>
-</section>
-
+    <!-- Sección del carrusel con 7 imágenes -->
+    <section id="carrusel">
+        <div class="carrusel">
+            <img src="imagenes/luffy1.jpg" alt="Figura Funko Pop de Luffy, personaje de One Piece" loading="lazy">
+            <img src="imagenes/batman1.webp" alt="Figura Funko Pop de Batman" loading="lazy">
+            <img src="imagenes/spidermanmorales1.jpg" alt="Figura Funko Pop de Spiderman Morales" loading="lazy">
+            <img src="imagenes/zoro1.jpg" alt="Figura Funko Pop de Zoro" loading="lazy">
+            <img src="imagenes/jinbts1.webp" alt="Figura Funko Pop de Jin, personaje de BTS" loading="lazy">
+            <img src="imagenes/stich1.webp" alt="Figura Funko Pop de Stich" loading="lazy">
+        </div>
+        <button id="prev">Anterior</button>
+        <button id="next">Siguiente</button>
+    </section>
 
     <!-- Sección de productos destacados -->
     <section id="productos-destacados">
         <h2>Productos Destacados</h2>
         <div class="producto">
-            <img src="imagenes/luffy1.jpg" alt="Luffy Funko">
+            <img src="imagenes/luffy1.jpg" alt="Figura Funko Pop de Luffy, personaje de One Piece" loading="lazy">
             <h3>Luffy Funko</h3>
             <p>Precio: S/.32</p>
         </div>
         <div class="producto">
-            <img src="imagenes/batman1.webp" alt="Batman Funko">
+            <img src="imagenes/batman1.webp" alt="Figura Funko Pop de Batman" loading="lazy">
             <h3>Batman Funko</h3>
             <p>Precio: S/.32</p>
         </div>
         <div class="producto">
-            <img src="imagenes/spidermanmorales1.jpg" alt="Spiderman Morales Funko">
+            <img src="imagenes/spidermanmorales1.jpg" alt="Figura Funko Pop de Spiderman Morales" loading="lazy">
             <h3>Spiderman Morales Funko</h3>
             <p>Precio: S/.30</p>
         </div>
         <div class="producto">
-            <img src="imagenes/zoro1.jpg" alt="Zoro Funko">
+            <img src="imagenes/zoro1.jpg" alt="Figura Funko Pop de Zoro" loading="lazy">
             <h3>Zoro Funko</h3>
             <p>Precio: S/.30</p>
         </div>
@@ -204,14 +106,24 @@
             images[index].style.display = 'block'; // Mostrar la siguiente imagen
         }
 
+        function showPrevImage() {
+            images[index].style.display = 'none'; // Ocultar la imagen actual
+            index = (index - 1 + totalImages) % totalImages; // Cambiar al índice anterior
+            images[index].style.display = 'block'; // Mostrar la imagen anterior
+        }
+
         // Inicializar el carrusel mostrando solo la primera imagen
         images.forEach((img, idx) => {
             img.style.display = idx === 0 ? 'block' : 'none';
         });
 
-        // Cambiar imagen cada 3 segundos
+        document.getElementById('next').addEventListener('click', showNextImage);
+        document.getElementById('prev').addEventListener('click', showPrevImage);
+
+        // Cambiar imagen automáticamente cada 3 segundos
         setInterval(showNextImage, 3000);
     </script>
 
 </body>
+
 </html>
