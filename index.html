@@ -97,35 +97,6 @@
         <p><a href="https://forms.gle/W35HobGPKXQcbhRU9" target="_blank" class="enlace-formulario">Enviar Mensaje</a></p>
     </footer>
 
-    <script>
-        let index = 0;
-        const images = document.querySelectorAll('#carrusel img');
-        const totalImages = images.length;
-
-        function showNextImage() {
-            images[index].style.display = 'none'; // Ocultar la imagen actual
-            index = (index + 1) % totalImages; // Cambiar al siguiente índice
-            images[index].style.display = 'block'; // Mostrar la siguiente imagen
-        }
-
-        function showPrevImage() {
-            images[index].style.display = 'none'; // Ocultar la imagen actual
-            index = (index - 1 + totalImages) % totalImages; // Cambiar al índice anterior
-            images[index].style.display = 'block'; // Mostrar la imagen anterior
-        }
-
-        // Inicializar el carrusel mostrando solo la primera imagen
-        images.forEach((img, idx) => {
-            img.style.display = idx === 0 ? 'block' : 'none';
-        });
-
-        document.getElementById('next').addEventListener('click', showNextImage);
-        document.getElementById('prev').addEventListener('click', showPrevImage);
-
-        // Cambiar imagen automáticamente cada 3 segundos
-        setInterval(showNextImage, 3000);
-    </script>
-
     <style>
         /* CSS para hacer que los productos se muestren en dos columnas */
         .productos-container {
@@ -139,8 +110,9 @@
                 grid-template-columns: 1fr; /* En pantallas pequeñas, mostrar una sola columna */
             }
         }
-       /* Clase para el menú de navegación */
-     .menu-navegacion {
+
+        /* Clase para el menú de navegación */
+        .menu-navegacion {
             display: flex; /* Mantiene los elementos en línea (horizontalmente) */
             justify-content: center; /* Centra el menú horizontalmente */
             background-color: #4CAF50; /* Color de fondo del menú */
@@ -165,16 +137,22 @@
         /* Estilo responsivo */
         @media (max-width: 768px) {
             .menu-navegacion {
-                flex-direction: row; /* Mantiene los elementos en fila también en pantallas pequeñas */
+                flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+                align-items: center; /* Centrar el contenido verticalmente */
             }
-            
+
             .menu-navegacion ul {
-                flex-direction: row; /* Asegura que los elementos del menú estén en horizontal */
+                flex-direction: column; /* Los elementos del menú se mostrarán en vertical */
+                width: 100%; /* Asegurar que el menú ocupe todo el ancho disponible */
             }
-            
+
+            .menu-navegacion ul li {
+                margin: 10px 0; /* Espaciado entre los enlaces */
+            }
+
             .menu-navegacion ul li a {
-                width: auto; /* Mantiene el tamaño natural de los enlaces */
-                text-align: center; /* Alinea el texto al centro (opcional, ya que es horizontal) */
+                width: 100%; /* Hacer que los enlaces ocupen todo el ancho del contenedor */
+                text-align: center; /* Centrar el texto dentro de los enlaces */
             }
         }
     </style>
