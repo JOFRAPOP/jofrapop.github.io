@@ -13,6 +13,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4; /* Color de fondo */
         }
 
         h2, p {
@@ -26,7 +27,6 @@
             margin: 10px 0;
             font-weight: bold;
             text-transform: uppercase;
-            text-align: center;
         }
 
         p {
@@ -35,10 +35,10 @@
             margin-bottom: 20px;
         }
 
-        /* Contenedor de categorías con tres columnas */
+        /* Contenedor de categorías */
         #categoria-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajustar automáticamente */
             gap: 20px;
             padding: 20px;
             max-width: 1200px;
@@ -46,7 +46,7 @@
         }
 
         .categoria {
-            background-color: #f9f9f9;
+            background-color: #fff; /* Fondo blanco */
             border: 1px solid #ddd;
             border-radius: 8px;
             padding: 20px;
@@ -122,6 +122,21 @@
         .enlace-formulario:hover {
             text-decoration: underline;
         }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            h3 {
+                font-size: 1.1em; /* Ajustar tamaño de texto en móviles */
+            }
+
+            p {
+                font-size: 1em; /* Ajustar tamaño de texto en móviles */
+            }
+
+            .categorias li {
+                margin: 0 10px; /* Ajustar margen en móviles */
+            }
+        }
     </style>
 </head>
 <body>
@@ -132,7 +147,7 @@
 
         <!-- Menú de navegación principal -->
         <nav>
-            <ul>
+            <ul class="categorias">
                 <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
                 <li><a href="productos.html">Productos</a></li> <!-- Enlace a la página de productos -->
                 <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li> <!-- Enlace a la página de sobre nosotros -->
