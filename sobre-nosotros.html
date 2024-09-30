@@ -27,6 +27,11 @@
             text-decoration: none; /* Sin subrayado */
         }
 
+        nav a:hover {
+            color: #FFD700; /* Cambia el color al pasar el cursor */
+            text-decoration: underline; /* Subraya los enlaces al pasar el cursor */
+        }
+
         /* Estilos para la sección sobre nosotros */
         #sobre-nosotros {
             display: flex; /* Usar flexbox para el layout */
@@ -58,7 +63,7 @@
 
         .mision-vision div {
             flex: 1; /* Cada sección ocupa el mismo espacio */
-            margin: 0 20px; /* Margen lateral */
+            margin: 0 40px; /* Margen lateral aumentado */
             text-align: center; /* Centrar texto */
         }
 
@@ -105,6 +110,23 @@
         .contacto li {
             margin: 5px 0; /* Espaciado entre elementos de la lista */
         }
+
+        /* Estilos para redes sociales en pie de página */
+        .redes-sociales {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Espacio entre los íconos */
+            margin: 10px 0;
+        }
+
+        .redes-sociales a {
+            color: white; /* Color de los íconos */
+            font-size: 18px; /* Tamaño de los íconos */
+        }
+
+        .redes-sociales a:hover {
+            color: #FFD700; /* Cambia el color al pasar el cursor */
+        }
     </style>
 </head>
 <body>
@@ -141,29 +163,29 @@
     <div class="contacto">
         <h3>Si no puedes ingresar a los enlaces contáctanos en las siguientes redes:</h3>
         <ul>
-            <li><strong>Facebook:</strong> JoFraPop</li>
-            <li><strong>WhatsApp:</strong> 900426676</li>
-            <li><strong>Instagram:</strong> @JoFraPop</li>
+            <li><strong>Facebook:</strong> <i class="fab fa-facebook"></i> JoFraPop</li>
+            <li><strong>WhatsApp:</strong> <i class="fab fa-whatsapp"></i> 900426676</li>
+            <li><strong>Instagram:</strong> <i class="fab fa-instagram"></i> @JoFraPop</li>
         </ul>
     </div>
 
-   <!-- Pie de página -->
-<footer>
-    <p>&copy; 2024 Todos los derechos reservados.</p>
-    <div class="redes-sociales">
-        <a href="https://www.instagram.com/invites/contact/?igsh=1aifeluu4fsbq&utm_content=vu468xr" target="_blank">
-            <i class="fab fa-instagram"></i> Instagram
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=61560951741947&mibextid=ZbWKwL" target="_blank">
-            <i class="fab fa-facebook"></i> Facebook
-        </a>
-        <a href="https://wa.me/51900426676" target="_blank">
-            <i class="fab fa-whatsapp"></i> WhatsApp
-        </a>
-    </div>
-    <p>¿Tienes preguntas? ¡Contáctanos!</p>
-    <p><a href="https://forms.gle/W35HobGPKXQcbhRU9" target="_blank" class="enlace-formulario">Enviar Mensaje</a></p>
-</footer>
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/invites/contact/?igsh=1aifeluu4fsbq&utm_content=vu468xr" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61560951741947&mibextid=ZbWKwL" target="_blank">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a href="https://wa.me/51900426676" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+        <p>¿Tienes preguntas? ¡Contáctanos!</p>
+        <p><a href="https://forms.gle/W35HobGPKXQcbhRU9" target="_blank" class="enlace-formulario">Enviar Mensaje</a></p>
+    </footer>
 
 </body>
 </html>
