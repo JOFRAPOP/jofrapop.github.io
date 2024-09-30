@@ -125,6 +125,7 @@
                 font-size: 1em;
             }
         }
+
      /* Clase para el menú de navegación */
      .menu-navegacion {
             display: flex; /* Mantiene los elementos en línea (horizontalmente) */
@@ -151,19 +152,19 @@
         /* Estilo responsivo */
         @media (max-width: 768px) {
             .menu-navegacion {
-                flex-direction: column; /* Coloca los elementos en columna en pantallas pequeñas */
+                flex-direction: row; /* Mantiene los elementos en fila también en pantallas pequeñas */
             }
             
             .menu-navegacion ul {
-                flex-direction: column; /* Asegura que los elementos del menú estén en vertical */
-                align-items: center; /* Centra los elementos del menú en pantallas pequeñas */
+                flex-direction: row; /* Asegura que los elementos del menú estén en horizontal */
             }
             
             .menu-navegacion ul li a {
-                width: 100%; /* Los enlaces ocupan todo el ancho disponible */
-                text-align: center; /* Alinea el texto al centro */
+                width: auto; /* Mantiene el tamaño natural de los enlaces */
+                text-align: center; /* Alinea el texto al centro (opcional, ya que es horizontal) */
             }
         }
+        
     </style>
 </head>
 <body>
