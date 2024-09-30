@@ -62,7 +62,25 @@
             text-decoration: underline; /* Subrayado del enlace al pasar el ratón */
         }
 
-        /* Footer */
+        /* Estilos para el encabezado y la navegación */
+        header {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav ul {
+            list-style-type: none; /* Elimina las viñetas de la lista */
+            padding: 0; /* Elimina el padding */
+            display: flex; /* Usa flexbox para la navegación */
+            justify-content: center; /* Centra los enlaces */
+            flex-wrap: wrap; /* Permite que los enlaces se envuelvan en múltiples líneas si es necesario */
+        }
+
+        nav ul li {
+            margin: 0 15px; /* Espacio horizontal entre los enlaces */
+        }
+
+        /* Estilos para el footer */
         footer {
             text-align: center;
             padding: 20px;
@@ -88,6 +106,28 @@
 
         .enlace-formulario:hover {
             text-decoration: underline;
+        }
+
+        /* Media query para dispositivos móviles */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column; /* Cambia la dirección de los enlaces a vertical */
+                align-items: center; /* Centra los enlaces en el contenedor */
+            }
+
+            nav ul li {
+                margin: 5px 0; /* Espacio vertical entre los enlaces */
+            }
+
+            /* Ajustes para el contenedor de categorías */
+            #categoria-container {
+                flex-direction: column; /* Asegura que las categorías se alineen verticalmente */
+                align-items: center; /* Centra las categorías */
+            }
+
+            .categoria {
+                width: 100%; /* Ancho completo en dispositivos móviles */
+            }
         }
     </style>
 </head>
@@ -156,4 +196,5 @@
     </footer>
 </body>
 </html>
+
 
