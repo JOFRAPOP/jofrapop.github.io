@@ -13,6 +13,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f0f0f0; /* Fondo suave */
         }
 
         h2, p {
@@ -26,7 +27,6 @@
             margin: 10px 0;
             font-weight: bold;
             text-transform: uppercase;
-            text-align: center;
         }
 
         p {
@@ -35,10 +35,10 @@
             margin-bottom: 20px;
         }
 
-        /* Contenedor de categorías con tres columnas */
+        /* Contenedor de categorías con diseño flexible */
         #categoria-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajuste automático a columnas */
             gap: 20px;
             padding: 20px;
             max-width: 1200px;
@@ -46,7 +46,7 @@
         }
 
         .categoria {
-            background-color: #f9f9f9;
+            background-color: #ffffff;
             border: 1px solid #ddd;
             border-radius: 8px;
             padding: 20px;
@@ -68,6 +68,7 @@
         /* Navegación rápida de categorías */
         .categorias {
             display: flex;
+            flex-wrap: wrap; /* Permite que se ajusten en pantallas pequeñas */
             justify-content: center;
             list-style: none;
             padding: 0;
@@ -132,7 +133,7 @@
 
         <!-- Menú de navegación principal -->
         <nav>
-            <ul>
+            <ul class="categorias">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
@@ -234,6 +235,10 @@
         <p>¿Tienes preguntas? ¡Contáctanos!</p>
         <p><a href="https://forms.gle/W35HobGPKXQcbhRU9" target="_blank" class="enlace-formulario">Enviar Mensaje</a></p>
     </footer>
+
+</body>
+</html>
+
 
 </body>
 </html>
