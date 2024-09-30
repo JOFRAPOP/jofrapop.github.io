@@ -45,27 +45,27 @@
     </section>
 
     <!-- Sección de productos destacados -->
-    <section id="productos-destacados">
+    <section id="productos-container">
         <h2>Productos Destacados</h2>
         <div class="productos-container">
             <div class="producto">
                 <img src="imagenes/luffy1.jpg" alt="Figura Funko Pop de Luffy, personaje de One Piece" loading="lazy">
-                <h3>Luffy Funko</h3>
+                <h3>Luffy</h3>
                 <p>Precio: S/.32</p>
             </div>
             <div class="producto">
                 <img src="imagenes/batman1.webp" alt="Figura Funko Pop de Batman" loading="lazy">
-                <h3>Batman Funko</h3>
+                <h3>Batman</h3>
                 <p>Precio: S/.32</p>
             </div>
             <div class="producto">
                 <img src="imagenes/spidermanmorales1.jpg" alt="Figura Funko Pop de Spiderman Morales" loading="lazy">
-                <h3>Spiderman Funko</h3>
+                <h3>Miles</h3>
                 <p>Precio: S/.30</p>
             </div>
             <div class="producto">
                 <img src="imagenes/zoro1.jpg" alt="Figura Funko Pop de Zoro" loading="lazy">
-                <h3>Zoro Funko</h3>
+                <h3>Zoro</h3>
                 <p>Precio: S/.30</p>
             </div>
         </div>
@@ -125,6 +125,21 @@
         // Cambiar imagen automáticamente cada 3 segundos
         setInterval(showNextImage, 3000);
     </script>
+
+    <style>
+        /* CSS para hacer que los productos se muestren en dos columnas */
+        .productos-container {
+            display: grid; /* Usar grid para la disposición de productos */
+            grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+            gap: 20px; /* Espacio entre los productos */
+        }
+
+        @media (max-width: 600px) {
+            .productos-container {
+                grid-template-columns: 1fr; /* En pantallas pequeñas, mostrar una sola columna */
+            }
+        }
+    </style>
 
 </body>
 
