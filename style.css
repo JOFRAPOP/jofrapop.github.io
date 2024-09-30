@@ -30,7 +30,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px; /* Espaciado entre los enlaces */
+    margin: 0 30px; /* Espaciado entre los enlaces */
 }
 
 
@@ -196,3 +196,4 @@ footer {
         margin: 5px 0; /* Espacio entre los enlaces */
     }
 }
+
