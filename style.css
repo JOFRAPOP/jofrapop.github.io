@@ -18,6 +18,7 @@ header {
     color: white; /* Color de texto blanco */
     text-align: center; /* Centrar texto */
     padding: 20px 0; /* Espaciado interno */
+    align-items: center; /* Centrar verticalmente */
 }
 
 /* Estilo para el menú de navegación */
