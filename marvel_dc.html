@@ -5,173 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Llaveros de Marvel y DC</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css"> <!-- Enlace correcto a la hoja de estilos -->
-
-    <style>
-        /* Estilos generales */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4; /* Color de fondo */
-        }
-
-        h2, p {
-            text-align: center;
-        }
-
-        /* Estilos mejorados para los productos */
-        h3 {
-            font-size: 1.2em;
-            color: #333;
-            margin: 10px 0;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        p {
-            font-size: 1.1em;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        /* Contenedor de categorías */
-        #categoria-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajustar automáticamente */
-            gap: 20px;
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto; /* Centrar horizontalmente */
-        }
-
-        .categoria {
-            background-color: #fff; /* Fondo blanco */
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s; /* Transición suave */
-        }
-
-        .categoria:hover {
-            transform: scale(1.05); /* Agrandar levemente en hover */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en hover */
-        }
-
-        .categoria img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        /* Navegación rápida de categorías */
-        .categorias {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-            margin-bottom: 20px;
-        }
-
-        .categorias li {
-            margin: 0 15px;
-        }
-
-        .categorias li a {
-            text-decoration: none;
-            color: #ff4646; /* Color de enlace */
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        .categorias li a:hover {
-            color: #ff6600; /* Color de enlace al pasar el mouse */
-        }
-
-        header {
-            background-color: #ff4646; /* Color representativo (Índigo) */
-            color: white;
-            padding: 20px 0;
-        }
-       
-
-        .footer {
-            background-color: #ff4646; /* Fondo rosado */
-            color: white; /* Letras blancas */
-            padding: 20px;
-            text-align: center;
-        }
-
-        .redes-sociales a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        .redes-sociales a:hover {
-            text-decoration: underline;
-        }
-
-        .enlace-formulario {
-            color: white;
-            text-decoration: none;
-        }
-
-        .enlace-formulario:hover {
-            text-decoration: underline;
-        }
-
-        /* Estilos responsivos */
-        @media (max-width: 768px) {
-            h3 {
-                font-size: 1.1em; /* Ajustar tamaño de texto en móviles */
-            }
-
-            p {
-                font-size: 1em; /* Ajustar tamaño de texto en móviles */
-            }
-
-            .categorias li {
-                margin: 0 10px; /* Ajustar margen en móviles */
-            }
-        }
-        /* Clase para el menú de navegación */
-        .menu-navegacion {
-            display: flex;
-            justify-content: center;
-            background-color: #ff4646;
-            padding: 10px;
-        }
-
-        .menu-navegacion ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: row; /* Mantener las opciones en fila */
-            gap: 20px;
-        }
-
-        .menu-navegacion ul li a {
-            color: white;
-            padding: 10px 20px;
-            font-size: 18px;
-            transition: background-color 0.3s ease;
-        }
-
-        /* Estilo responsivo */
-        @media (max-width: 768px) {
-            .menu-navegacion {
-                flex-direction: row; /* Mantiene los elementos en fila en pantallas pequeñas */
-            }
-
-            .menu-navegacion ul {
-                flex-direction: row;
-            }
-        }
-        
-    </style>
+    <link rel="stylesheet" href="marvel_dc.css"> <!-- Enlace a la hoja de estilos -->
 </head>
 <body>
 
@@ -180,7 +14,7 @@
         <h1>Llaveros de Marvel y DC</h1> <!-- Título de la página actual -->
 
         <!-- Menú de navegación principal -->
-        <nav class ="menu-navegacion">
+        <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
                 <li><a href="productos.html">Productos</a></li> <!-- Enlace a la página de productos -->
@@ -188,11 +22,12 @@
             </ul>
         </nav>
     </header>
-
     <!-- Subtítulo y descripción breve -->
-    <h2>Nuestra Colección de Llaveros de Marvel y DC</h2>
-    <p>Descubre nuestra selección de llaveros inspirados en los héroes más icónicos.</p>
-
+    <section class="nuestra-coleccion">
+        <h2>Nuestra Colección de Llaveros de Marvel y DC</h2>
+        <p>Descubre nuestra selección de llaveros inspirados en los héroes más icónicos.</p>
+    </section>
+    
     <!-- Opciones de navegación rápida para cambiar entre categorías -->
     <nav>
         <ul class="categorias">
@@ -249,7 +84,7 @@
     </div>
 
    <!-- Pie de página -->
- <footer>
+   <footer>
     <p>&copy; 2024 Todos los derechos reservados.</p>
     <div class="redes-sociales">
         <a href="https://www.instagram.com/invites/contact/?igsh=1aifeluu4fsbq&utm_content=vu468xr" target="_blank">
