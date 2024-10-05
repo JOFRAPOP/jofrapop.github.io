@@ -18,22 +18,19 @@ header {
     color: white; /* Color de texto blanco */
     text-align: center; /* Centrar texto */
     padding: 20px 0; /* Espaciado interno */
-  
 }
 
+/* Estilo para la navegación */
 nav ul {
     list-style-type: none; /* Sin viñetas */
     padding: 0; /* Sin padding */
     display: flex; /* Usar flexbox para el layout */
-    flex-direction: row; /* Disposición horizontal */
     justify-content: center; /* Centrar elementos horizontalmente */
 }
 
 nav ul li {
     margin: 0 30px; /* Espaciado entre los enlaces */
 }
-
-
 
 nav a {
     color: white; /* Color de texto blanco para enlaces */
@@ -44,156 +41,39 @@ nav a:hover {
     text-decoration: underline; /* Subrayado al pasar el cursor */
 }
 
-/* Estilo para la sección de bienvenida */
-#bienvenida {
-    text-align: center; /* Centrar texto */
-    margin: 20px 0; /* Margen superior e inferior */
-}
-
-#bienvenida p {
-    font-size: 1.2em; /* Tamaño de fuente para el párrafo */
-    color: #333; /* Color del texto */
-}
-
-/* Estilo para el carrusel de imágenes */
-#carrusel {
-    position: relative;
-    overflow: hidden;
-    max-width: 50%;
-    margin: 20px auto;
-    border-radius: 8px;
-}
-
-.carrusel {
-    display: flex; /* Cambiado a flex para una presentación horizontal */
-    transition: transform 0.5s ease-in-out; /* Transición suave */
-}
-
-.carrusel img {
-    width: 100%; /* Ajusta las imágenes al contenedor */
-    border-radius: 8px; /* Bordes redondeados */
-}
-
-/* Sección de productos destacados */
-#productos-destacados {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
-}
-
-.producto {
-    display: inline-block;
-    width: 23%; /* Ajuste para que quepan 4 productos */
-    margin: 1%;
-    text-align: center;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s; /* Transición suave */
-}
-
-.producto:hover {
-    transform: scale(1.05); /* Agrandar en hover */
-}
-
-.producto img {
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-/* Estilo para el pie de página */
+/* Estilos para el footer */
 footer {
-    background-color: #4CAF50; /* Color verde para el fondo del pie de página */
-    color: white; /* Color de texto blanco */
-    text-align: center; /* Centrar texto */
-    padding: 10px 0; /* Espaciado interno */
-    position: relative; /* Posición relativa */
-    width: 100%; /* Ancho completo */
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
 }
 
-/* Estilos para enlaces de redes sociales en el pie de página */
 .redes-sociales {
-    margin-top: 10px; /* Espacio en la parte superior de la sección de redes sociales */
+    display: flex; /* Usar flexbox para alinear horizontalmente */
+    justify-content: center; /* Centrar los iconos */
+    margin-bottom: 10px; /* Espacio debajo de las redes sociales */
 }
 
 .redes-sociales a {
-    color: white; /* Color de texto blanco para enlaces */
-    text-decoration: none; /* Elimina subrayado */
-    margin: 0 10px; /* Espaciado entre los enlaces */
+    display: flex; /* Hacer que cada enlace se comporte como un contenedor flexible */
+    align-items: center; /* Alinear verticalmente el icono y el texto */
+    color: white;
+    text-decoration: none;
+    margin: 0 10px; /* Espaciado horizontal entre iconos */
 }
 
-.redes-sociales a:hover {
-    text-decoration: underline; /* Subrayado al pasar el cursor */
+.redes-sociales i {
+    margin-right: 5px; /* Espacio entre el icono y el texto */
 }
 
-/* Estilo para el enlace del formulario */
+
 .enlace-formulario {
-    color: #fff; /* Color blanco */
-    font-weight: bold; /* Texto en negrita */
+    color: white;
+    text-decoration: none;
 }
 
 .enlace-formulario:hover {
-    text-decoration: underline; /* Subrayado al pasar el cursor */
-}
-
-/* NUEVO: Estilos para los íconos de redes sociales en el pie de página */
-.redes-sociales i {
-    font-size: 24px; /* Tamaño de los íconos */
-    margin-right: 5px; /* Espacio entre ícono y texto */
-    vertical-align: middle; /* Alinea verticalmente el ícono con el texto */
-}
-
-/* Color al pasar el cursor sobre el ícono */
-.redes-sociales a:hover i {
-    color: #00aaff; /* Cambia el color del ícono al pasar el mouse */
-}
-
-/* Estilo para pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
-    /* Ajuste para el encabezado */
-    header {
-        padding: 10px 0;
-        font-size: 1.2em; /* Reducir el tamaño del texto */
-    }
-
-    /* Ajustes en la navegación para que se apilen los enlaces */
-    nav ul {
-        text-align: center; /* Centra los enlaces */
-    }
-
-    nav ul li {
-        display: block; /* Los enlaces se apilan verticalmente */
-        margin: 10px 0; /* Espacio entre enlaces */
-    }
-
-    /* Ajuste en la sección de bienvenida */
-    #bienvenida p {
-        font-size: 1em; /* Tamaño de fuente reducido */
-        padding: 0 10px; /* Agregar algo de padding para dar espacio en pantallas pequeñas */
-    }
-
-    /* Ajuste en el carrusel de imágenes */
-    .carrusel {
-        flex-direction: column; /* Apila las imágenes en lugar de alinearlas horizontalmente */
-        align-items: center; /* Centra las imágenes */
-    }
-
-    .carrusel img {
-        width: 80%; /* Las imágenes ocupan más espacio en el móvil */
-        margin-bottom: 10px; /* Espacio entre las imágenes */
-    }
-
-    /* Ajustes en el pie de página */
-    footer {
-        font-size: 0.9em; /* Tamaño de texto más pequeño */
-    }
-
-    .redes-sociales a {
-        display: block; /* Los enlaces se apilan verticalmente */
-        margin: 5px 0; /* Espacio entre los enlaces */
-    }
+    text-decoration: underline;
 }
 
