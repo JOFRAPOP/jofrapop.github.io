@@ -1,0 +1,200 @@
+/* Reset básico para eliminar márgenes y paddings predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+}
+
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente general de la página */
+    line-height: 1.6; /* Altura de línea para mayor legibilidad */
+    background-color: #f9f9f9; /* Color de fondo claro */
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #ff4646; /* Color morado para el fondo del encabezado */
+    color: white; /* Color de texto blanco */
+    text-align: center; /* Centrar texto */
+    padding: 20px 0; /* Espaciado interno */
+}
+
+/* Estilo para la navegación */
+nav ul {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+    display: flex; /* Usar flexbox para el layout */
+    justify-content: center; /* Centrar elementos horizontalmente */
+}
+
+nav ul li {
+    margin: 0 30px; /* Espaciado entre los enlaces */
+}
+
+nav a {
+    color: white; /* Color de texto blanco para enlaces */
+    text-decoration: none; /* Elimina subrayado */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+/* Contenedor de categorías con tres columnas */
+#categoria-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Adaptar columnas automáticamente */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+.categoria {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transición suave */
+}
+
+.categoria:hover {
+    transform: scale(1.05); /* Agrandar levemente en hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en hover */
+}
+
+.categoria img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Navegación rápida de categorías */
+.categorias {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten en varias filas */
+}
+
+.categorias li {
+    margin: 0 15px;
+}
+
+.categorias li a {
+    text-decoration: none;
+    color: #ff4646; /* Color morado en los enlaces de categorías */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.categorias li a:hover {
+    color: #ff6600; /* Color en hover */
+}
+
+/* Estilos para el footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff4646; /* Color morado para el pie de página */
+    color: white;
+}
+
+.redes-sociales {
+    display: flex; /* Usar flexbox para alinear horizontalmente */
+    justify-content: center; /* Centrar los iconos */
+    margin-bottom: 10px; /* Espacio debajo de las redes sociales */
+}
+
+.redes-sociales a {
+    display: flex; /* Hacer que cada enlace se comporte como un contenedor flexible */
+    align-items: center; /* Alinear verticalmente el icono y el texto */
+    color: white;
+    text-decoration: none;
+    margin: 0 10px; /* Espaciado horizontal entre iconos */
+}
+
+.redes-sociales i {
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+
+.enlace-formulario {
+    color: white;
+    text-decoration: none;
+}
+
+.enlace-formulario:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p, h3 {
+        font-size: 1em;
+    }
+}
+
+/* Clase para el menú de navegación */
+.menu-navegacion {
+    display: flex;
+    justify-content: center;
+    background-color: #ff4646; /* Color morado para el menú de navegación */
+    padding: 10px;
+}
+
+.menu-navegacion ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row; /* Mantener las opciones en fila */
+    gap: 20px;
+}
+
+.menu-navegacion ul li a {
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .menu-navegacion ul {
+        flex-direction: column; /* Cambiar a columna en pantallas más pequeñas */
+    }
+}
+/*Para el subtitulo de la pagina*/
+.nuestra-coleccion {
+    text-align: center; /* Centrar el texto */
+    padding: 20px; /* Espaciado interno */
+}
+
+.nuestra-coleccion h2 {
+    font-size: 2em; /* Tamaño de fuente para el título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.nuestra-coleccion p {
+    font-size: 1.2em; /* Tamaño de fuente para la descripción */
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 600px) {
+    .nuestra-coleccion h2 {
+        font-size: 1.5em; /* Ajustar tamaño en pantallas pequeñas */
+    }
+
+    .nuestra-coleccion p {
+        font-size: 1em; /* Ajustar tamaño en pantallas pequeñas */
+    }
+}

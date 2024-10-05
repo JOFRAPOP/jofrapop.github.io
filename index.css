@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Color de fondo general */
+    color: #333; /* Color de texto */
+}
+
+/* Estilos del contenedor principal */
+#inicio {
+    max-width: 1200px;
+    margin: 0 auto; /* Centrar el contenedor */
+    padding: 20px;
+}
+
+/* Estilos de bienvenida */
+#bienvenida {
+    text-align: center; /* Centrar texto */
+    margin-bottom: 20px;
+}
+
+#bienvenida h2 {
+    font-size: 2em;
+    color: #2c3e50; /* Color para el título */
+}
+
+#bienvenida p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Estilos del carrusel */
+#carrusel {
+    position: relative; /* Para posicionar botones */
+    overflow: hidden; /* Ocultar imágenes fuera de la vista */
+    margin-bottom: 20px;
+    display: flex; /* Usar flexbox para centrar */
+    justify-content: center; /* Centrar el carrusel */
+}
+
+.carrusel {
+    display: flex; /* Usar flexbox para alinear imágenes */
+    transition: transform 0.5s ease; /* Efecto suave al cambiar de imagen */
+}
+
+.carrusel img {
+    min-width: 100%; /* Cada imagen ocupa el 100% del contenedor */
+    max-height: 400px; /* Altura máxima para las imágenes */
+    object-fit: cover; /* Ajustar la imagen sin deformar */
+}
+
+/* Estilos de botones del carrusel */
+button {
+    background-color: #3498db; /* Color de fondo para botones */
+    color: white; /* Color de texto en botones */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    margin: 10px;
+    border-radius: 5px; /* Bordes redondeados */
+    position: absolute; /* Posicionar botones dentro del carrusel */
+    top: 50%; /* Centrar verticalmente */
+    transform: translateY(-50%); /* Ajustar posición centrada */
+    z-index: 1; /* Asegurar que los botones estén encima de las imágenes */
+}
+
+#prev {
+    left: 10px; /* Posición del botón anterior */
+}
+
+#next {
+    right: 10px; /* Posición del botón siguiente */
+}
+
+button:hover {
+    background-color: #2980b9; /* Color al pasar el mouse */
+}
+
+/* Estilos de productos destacados */
+#productos-container {
+    margin-bottom: 20px;
+}
+
+.productos-container {
+    display: grid; /* Usar grid para la distribución */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px; /* Espaciado entre los productos */
+}
+
+.producto {
+    background: white; /* Fondo blanco para productos */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 15px;
+    text-align: center; /* Centrar texto dentro del producto */
+    transition: transform 0.2s; /* Efecto al pasar el mouse */
+}
+
+.producto:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+.producto img {
+    max-width: 100%; /* Que las imágenes ocupen todo el ancho del producto */
+    height: auto; /* Mantener proporción */
+}
+@media (min-width: 768px) {
+    .productos-container {
+        grid-template-columns: repeat(4, 1fr); /* Tres columnas en pantallas más grandes */
+    }
+}
+
+@media (max-width: 767px) {
+    .productos-container {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas más pequeñas */
+    }
+}
+
+
+/* Estilos de testimonios */
+.testimonios {
+    background-color: #ecf0f1; /* Color de fondo para testimonios */
+    padding: 15px;
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centrar texto */
+}
+
+.testimonios h2 {
+    margin-bottom: 10px; /* Espaciado entre título y testimonios */
+}
+
+.testimonio {
+    margin: 10px 0; /* Espaciado entre testimonios */
+    font-style: italic; /* Cursiva para el texto de los testimonios */
+}
+
+/* Mejora de estilo de testimonios */
+.testimonio::before {
+    content: '"'; /* Comillas al inicio del testimonio */
+    font-size: 1.5em; /* Tamaño de las comillas */
+    color: #3498db; /* Color de las comillas */
+}
+
+.testimonio::after {
+    content: '"'; /* Comillas al final del testimonio */
+    font-size: 1.5em; /* Tamaño de las comillas */
+    color: #3498db; /* Color de las comillas */
+}
