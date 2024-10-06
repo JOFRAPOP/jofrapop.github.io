@@ -9,10 +9,13 @@
 .info {
     display: flex; /* Usar flexbox para el layout */
     margin-bottom: 30px; /* Espaciado inferior */
+    align-items: center; /* Alinear verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
 }
 
+/* Imagen sobre nosotros */
 .imagen-sobre-nosotros {
-    max-width: 30%; /* Ancho máximo de la imagen */
+    max-width: 30%; /* Ancho máximo de la imagen en pantallas grandes */
     height: auto; /* Altura automática para mantener la proporción */
     border-radius: 10px; /* Bordes redondeados de la imagen */
     margin-right: 20px; /* Espacio a la derecha de la imagen */
@@ -75,6 +78,7 @@
     .info {
         flex-direction: column; /* Cambia a columna en pantallas pequeñas */
         text-align: center; /* Centrar texto */
+        align-items: center; /* Centrar elementos verticalmente */
     }
 
     .imagen-sobre-nosotros {
