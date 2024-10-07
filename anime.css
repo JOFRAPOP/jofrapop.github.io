@@ -14,10 +14,19 @@ body {
 
 /* Estilo para el encabezado */
 header {
-    background-color: #4B0082; /* Color morado para el fondo del encabezado */
+    background: linear-gradient(135deg, #4B0082, #8A2BE2); /* Degradado morado para el fondo del encabezado */
     color: white; /* Color de texto blanco */
     text-align: center; /* Centrar texto */
     padding: 20px 0; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+header h1 {
+    font-size: 2.5em; /* Tamaño de texto aumentado para el título */
+}
+
+header h2 {
+    font-size: 1.8em; /* Tamaño de texto aumentado para el subtítulo */
 }
 
 /* Estilo para la navegación */
@@ -26,6 +35,7 @@ nav ul {
     padding: 0; /* Sin padding */
     display: flex; /* Usar flexbox para el layout */
     justify-content: center; /* Centrar elementos horizontalmente */
+    flex-wrap: nowrap; /* Mantener los elementos en una sola fila */
 }
 
 nav ul li {
@@ -35,10 +45,12 @@ nav ul li {
 nav a {
     color: white; /* Color de texto blanco para enlaces */
     text-decoration: none; /* Elimina subrayado */
+    padding: 10px 15px; /* Añadir padding a los enlaces de navegación */
+    transition: background-color 0.3s ease; /* Transición suave para el fondo */
 }
 
 nav a:hover {
-    text-decoration: underline; /* Subrayado al pasar el cursor */
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo blanco semitransparente en hover */
 }
 
 /* Contenedor de categorías con tres columnas */
@@ -52,7 +64,7 @@ nav a:hover {
 }
 
 .categoria {
-    background-color: #f9f9f9;
+    background-color: white; /* Color de fondo blanco para las categorías */
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
@@ -72,13 +84,14 @@ nav a:hover {
 }
 
 /* Navegación rápida de categorías */
+
 .categorias {
     display: flex;
     justify-content: center;
     list-style: none;
     padding: 0;
     margin-bottom: 20px;
-    flex-wrap: wrap; /* Permitir que los elementos se ajusten en varias filas */
+    flex-wrap: nowrap; /* Mantener los elementos en una sola fila */
 }
 
 .categorias li {
@@ -90,6 +103,8 @@ nav a:hover {
     color: #4B0082; /* Color morado en los enlaces de categorías */
     font-size: 16px;
     font-weight: bold;
+    padding: 8px;
+    flex-wrap: nowrap; /* Mantener los elementos en una sola fila */
 }
 
 .categorias li a:hover {
@@ -104,6 +119,7 @@ footer {
     color: white;
 }
 
+/* Redes sociales */
 .redes-sociales {
     display: flex; /* Usar flexbox para alinear horizontalmente */
     justify-content: center; /* Centrar los iconos */
@@ -122,7 +138,6 @@ footer {
     margin-right: 5px; /* Espacio entre el icono y el texto */
 }
 
-
 .enlace-formulario {
     color: white;
     text-decoration: none;
@@ -134,12 +149,32 @@ footer {
 
 /* Media Queries para dispositivos móviles */
 @media (max-width: 600px) {
-    h2 {
-        font-size: 1.5em;
+    header h1 {
+        font-size: 2em; /* Ajustar tamaño en pantallas pequeñas */
+    }
+
+    header h2 {
+        font-size: 1.5em; /* Ajustar tamaño en pantallas pequeñas */
+    }
+
+    nav ul li {
+        margin: 0 15px; /* Menos margen en pantallas pequeñas */
+    }
+
+    #categoria-container {
+        padding: 10px; /* Menos padding en pantallas pequeñas */
+    }
+
+    .nuestra-coleccion h2 {
+        font-size: 1.5em; /* Ajustar tamaño en pantallas pequeñas */
+    }
+
+    .nuestra-coleccion p {
+        font-size: 1em; /* Ajustar tamaño en pantallas pequeñas */
     }
 
     p, h3 {
-        font-size: 1em;
+        font-size: 1em; /* Ajustar tamaño en pantallas pequeñas */
     }
 }
 
@@ -164,23 +199,24 @@ footer {
     color: white;
     padding: 10px 20px;
     font-size: 18px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;  
 }
 
 /* Estilo responsivo */
-@media (max-width: 768px) {
+@media (max-width: 868px) {
     .menu-navegacion ul {
-        flex-direction: column; /* Cambiar a columna en pantallas más pequeñas */
+        flex-direction: row; /* Mantener en fila en pantallas más pequeñas */
     }
 }
-/*Para el subtitulo de la pagina*/
+
+/* Para el subtitulo de la pagina */
 .nuestra-coleccion {
     text-align: center; /* Centrar el texto */
     padding: 20px; /* Espaciado interno */
 }
 
 .nuestra-coleccion h2 {
-    font-size: 2em; /* Tamaño de fuente para el título */
+    font-size: 2.5em; /* Tamaño de fuente para el título aumentado */
     margin-bottom: 10px; /* Espacio debajo del título */
 }
 
