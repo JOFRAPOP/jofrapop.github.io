@@ -37,7 +37,7 @@ nav a {
     color: white; /* Color de texto blanco para enlaces */
     text-decoration: none; /* Elimina subrayado */
     transition: background-color 0.3s ease; /* Transición suave */
-    padding: 10px 20px; /* Espaciado interno para enlaces */
+    padding: 10px 15px; /* Espaciado interno para enlaces */
 }
 
 nav a:hover {
