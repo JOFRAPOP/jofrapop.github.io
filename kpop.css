@@ -93,7 +93,7 @@ nav a:hover {
     color: #ff77ff; /* Color rosado característico en los enlaces de categorías */
     font-size: 16px;
     font-weight: bold;
-    padding: 8px;
+    padding: 0;
 }
 
 .categorias li a:hover {
