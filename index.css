@@ -50,7 +50,7 @@ body {
 
 /* Estilos de botones del carrusel */
 button {
-    background-color: #3498db; /* Color de fondo para botones */
+    background-color: #4CAF50; /* Color de fondo para botones */
     color: white; /* Color de texto en botones */
     border: none;
     padding: 10px 15px;
@@ -72,7 +72,7 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9; /* Color al pasar el mouse */
+    background-color: #eeec66; /* Color al pasar el mouse */
 }
 
 /* Estilos de productos destacados */
@@ -144,4 +144,183 @@ button:hover {
     content: '"'; /* Comillas al final del testimonio */
     font-size: 1.5em; /* Tamaño de las comillas */
     color: #3498db; /* Color de las comillas */
+}
+
+
+/* Estilos para la sección promocional */
+#promocion {
+    background-color: #4CAF50; /* Fondo verde principal que armoniza con tu marca */
+    color: white; /* Texto blanco para buena legibilidad */
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Bordes redondeados para darle un estilo moderno */
+}
+
+.promo-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #fff06b; /* Título en amarillo suave para destacar */
+}
+
+.promo-container p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: white; /* Mantener el texto promocional en blanco */
+}
+
+.btnn-promocion {
+    display: inline-block;
+    background-color: #ffeb3b; /* Botón amarillo suave que destaca */
+    color: #2e7d32; /* Texto verde oscuro para buen contraste */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btnn-promocion:hover {
+    background-color: #fbc02d; /* Efecto dorado al pasar el mouse */
+    color: #ffffff; /* Texto blanco en hover para mayor contraste */
+}
+/* Estilos responsivos para la sección promocional */
+@media (max-width: 768px) {
+    #promocion {
+        padding: 15px;
+    }
+
+    .promo-container h2 {
+        font-size: 1.5em;
+    }
+
+    .promo-container p {
+        font-size: 1em;
+    }
+
+    .btnn-promocion {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
+
+/* Estilos del modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    margin: auto;
+    background-color: #ffffff; /* Blanco */
+    border: 2px solid #388e3c; /* Verde oscuro */
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.close {
+    color: white; /* Color blanco para la "X" */
+    font-size: 2.0em; /* Tamaño de la "X" */
+    position: absolute; /* Posicionar de manera más flexible */
+    top: 10px; /* Ajustar la distancia desde la parte superior */
+    right: 20px; /* Ajustar la distancia desde la parte derecha */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la "X" */
+    z-index: 1000; /* Asegurarse de que la "X" esté en frente */
+    background-color: transparent; /* Fondo transparente para la "X" */
+    border: none; /* Sin bordes */
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #2e7d32; /* Verde */
+}
+
+.btn-promocion {
+    
+    display: inline-block;
+    background-color: #ffeb3b; /* Amarillo suave */
+    color: #000000; /* Texto negro */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-promocion:hover {
+    background-color: #fbc02d; /* Dorado */
+}
+/* Estilos responsivos para el modal */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 70%; /* Hacer el modal más ancho en pantallas pequeñas */
+        padding: 15px;
+    }
+
+    .close {
+        right: 10px; /* Ajustar la "X" en pantallas más pequeñas */
+    }
+}
+
+/**/
+/* Estilos de la barra flotante */
+#barraFlotante {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #4CAF50; /* Verde  */
+    color: white; /* Texto blanco */
+    text-align: center;
+    padding: 10px;
+    z-index: 1000;
+}
+
+#barraFlotante p {
+    margin: 0;
+}
+
+.btn-barra {
+    background-color: #ffeb3b; /* Amarillo suave */
+    color: #388e3c; /* Verde oscuro */
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.btn-barra:hover {
+    background-color: #fbc02d; /* Dorado */
+    color: #2e7d32; /* Verde */
+}
+
+.close-barra {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+}
+/* Estilos responsivos para la barra flotante */
+@media (max-width: 768px) {
+    #barraFlotante p {
+        font-size: 0.9em;
+    }
+
+    .btn-barra {
+        padding: 5px 15px;
+        font-size: 0.85em;
+    }
+
+    .close-barra {
+        right: 10px; /* Ajustar el botón de cierre en pantallas más pequeñas */
+        font-size: 1.3em;
+    }
 }
