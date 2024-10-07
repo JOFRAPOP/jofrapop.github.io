@@ -14,10 +14,11 @@ body {
 
 /* Estilo para el encabezado */
 header {
-    background-color: #ff4646; /* Color morado para el fondo del encabezado */
+    background: linear-gradient(to right, #ff4646, #ff4639); /* Gradiente de verdes */
     color: white; /* Color de texto blanco */
     text-align: center; /* Centrar texto */
     padding: 20px 0; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
 }
 
 /* Estilo para la navegación */
@@ -35,10 +36,13 @@ nav ul li {
 nav a {
     color: white; /* Color de texto blanco para enlaces */
     text-decoration: none; /* Elimina subrayado */
+    transition: background-color 0.3s ease; /* Transición suave */
+    padding: 10px 20px; /* Espaciado interno para enlaces */
 }
 
 nav a:hover {
-    text-decoration: underline; /* Subrayado al pasar el cursor */
+    background-color: rgba(255, 255, 255, 0.2); /* Efecto de fondo al pasar el cursor */
+   
 }
 
 /* Contenedor de categorías con tres columnas */
@@ -90,6 +94,7 @@ nav a:hover {
     color: #ff4646; /* Color morado en los enlaces de categorías */
     font-size: 16px;
     font-weight: bold;
+    padding: 8px;
 }
 
 .categorias li a:hover {
@@ -116,12 +121,16 @@ footer {
     color: white;
     text-decoration: none;
     margin: 0 10px; /* Espaciado horizontal entre iconos */
+    transition: transform 0.3s; /* Transición para el efecto de aumento */
+}
+
+.redes-sociales a:hover {
+    transform: scale(1.1); /* Aumentar icono al pasar el cursor */
 }
 
 .redes-sociales i {
     margin-right: 5px; /* Espacio entre el icono y el texto */
 }
-
 
 .enlace-formulario {
     color: white;
@@ -173,7 +182,8 @@ footer {
         flex-direction: column; /* Cambiar a columna en pantallas más pequeñas */
     }
 }
-/*Para el subtitulo de la pagina*/
+
+/* Para el subtitulo de la pagina */
 .nuestra-coleccion {
     text-align: center; /* Centrar el texto */
     padding: 20px; /* Espaciado interno */
