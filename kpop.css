@@ -14,10 +14,11 @@ body {
 
 /* Estilo para el encabezado */
 header {
-    background-color: #ff76ab; /* Color morado para el fondo del encabezado */
+    background: linear-gradient(90deg, #da7bda, #fa69a3); /* Gradiente de rosados */
     color: white; /* Color de texto blanco */
     text-align: center; /* Centrar texto */
     padding: 20px 0; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
 }
 
 /* Estilo para la navegación */
@@ -35,10 +36,12 @@ nav ul li {
 nav a {
     color: white; /* Color de texto blanco para enlaces */
     text-decoration: none; /* Elimina subrayado */
+    transition: background-color 0.3s ease; /* Transición suave */
+    padding: 5px 10px; /* Espaciado interno */
 }
 
 nav a:hover {
-    text-decoration: underline; /* Subrayado al pasar el cursor */
+    background-color: rgba(255, 255, 255, 0.2); /* Efecto de fondo al pasar el cursor */
 }
 
 /* Contenedor de categorías con tres columnas */
@@ -87,20 +90,21 @@ nav a:hover {
 
 .categorias li a {
     text-decoration: none;
-    color: #ff76ab; /* Color morado en los enlaces de categorías */
+    color: #ff77ff; /* Color rosado característico en los enlaces de categorías */
     font-size: 16px;
     font-weight: bold;
+    padding: 8px;
 }
 
 .categorias li a:hover {
-    color: #ff6600; /* Color en hover */
+    color: #ff3f8c; /* Color en hover */
 }
 
 /* Estilos para el footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #ff76ab; /* Color morado para el pie de página */
+    background-color: #ff77ff; /* Color rosado característico para el pie de página */
     color: white;
 }
 
@@ -116,6 +120,11 @@ footer {
     color: white;
     text-decoration: none;
     margin: 0 10px; /* Espaciado horizontal entre iconos */
+    transition: transform 0.3s; /* Transición para el efecto de aumento */
+}
+
+.redes-sociales a:hover {
+    transform: scale(1.1); /* Aumentar tamaño al pasar el cursor */
 }
 
 .redes-sociales i {
@@ -146,7 +155,7 @@ footer {
 .menu-navegacion {
     display: flex;
     justify-content: center;
-    background-color: #ff76ab; /* Color morado para el menú de navegación */
+    background-color: #ff77ff; /* Color rosado característico para el menú de navegación */
     padding: 10px;
 }
 
@@ -172,7 +181,8 @@ footer {
         flex-direction: column; /* Cambiar a columna en pantallas más pequeñas */
     }
 }
-/*Para el subtitulo de la pagina*/
+
+/* Para el subtitulo de la pagina */
 .nuestra-coleccion {
     text-align: center; /* Centrar el texto */
     padding: 20px; /* Espaciado interno */
@@ -197,3 +207,4 @@ footer {
         font-size: 1em; /* Ajustar tamaño en pantallas pequeñas */
     }
 }
+
