@@ -14,88 +14,113 @@
 </head>
 
 <body>
+        <!-- Pop-up modal -->
+        <div id="promoModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>¡Obtén un 15% de Descuento!</h2>
+                <p>Sigue nuestra cuenta de Instagram y obtén un 15% de descuento en tu próxima compra.</p>
+                <a href="https://www.instagram.com/invites/contact/?igsh=1aifeluu4fsbq&utm_content=vu468xr" target="_blank" class="btn-promocion">Síguenos en Instagram</a>
+            </div>
+        </div>
+
+
+         <!-- Barra flotante de promoción -->
+    <div id="barraFlotante">
+        <p>¡Síguenos en Instagram y obtén un 15% de descuento! <a href="https://www.instagram.com/invites/contact/?igsh=1aifeluu4fsbq&utm_content=vu468xr" target="_blank" class="btn-barra">Síguenos ahora</a></p>
+        <span class="close-barra">&times;</span>
+    </div>
     <header>
         <h1>¡BIENVENIDO A JOFRAPOP!</h1>
         <nav class="menu-navegacion">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
-                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="sobre-nosotros.html">Nosotros</a></li>
             </ul>
         </nav>
     </header>
+
+    <section id="bienvenida">
+        <h2>¡Descubre los Funkos más exclusivos!</h2>
+        <p>En JoFraPop, ofrecemos una selección única de Funkos Pop que son ideales para coleccionistas y amantes de la cultura pop.</p>
+    </section>
+
+    <section id="carrusel">
+        <div class="carrusel">
+            <img src="imagenes/luffy1.jpg" alt="Figura Funko Pop de Luffy, personaje de One Piece" loading="lazy">
+            <img src="imagenes/funkogoku.webp" alt="Figura Funko Pop de Goku" loading="lazy">
+            <img src="imagenes/spidermanmorales1.jpg" alt="Figura Funko Pop de Spiderman Morales" loading="lazy">
+            <img src="imagenes/zoro1.jpg" alt="Figura Funko Pop de Zoro" loading="lazy">
+            <img src="imagenes/jinbts1.webp" alt="Figura Funko Pop de Jin, personaje de BTS" loading="lazy">
+            <img src="imagenes/tobey1.webp" alt="Figura Funko Pop de Stich" loading="lazy">
+        </div>
+        <button id="prev">Anterior</button>
+        <button id="next">Siguiente</button>
+    </section>
     
 
-        <section id="bienvenida">
-            <h2>¡Descubre los Funkos más exclusivos!</h2>
-            <p>En JoFraPop, ofrecemos una selección única de Funkos Pop que son ideales para coleccionistas y amantes de la cultura pop.</p>
-        </section>
+    <!-- Sección Promocional -->
+    <section id="promocion">
+        <div class="promo-container">
+            <h2>¡Síguenos en Instagram y obtén 15% de descuento!</h2>
+            <p>Obtén 15% de descuento en tu primera compra al seguirnos en Instagram.</p>
+            <a href="https://www.instagram.com/invites/contact/?igsh=1aifeluu4fsbq&utm_content=vu468xr" target="_blank" class="btnn-promocion">¡Síguenos ahora!</a>
+        </div>
+    </section>
 
-        <section id="carrusel">
-            <div class="carrusel">
+    <section id="productos-container">
+        <h2>Productos Destacados</h2>
+        <div class="productos-container">
+            <div class="producto">
                 <img src="imagenes/luffy1.jpg" alt="Figura Funko Pop de Luffy, personaje de One Piece" loading="lazy">
+                <h3>Luffy</h3>
+                <p>Precio: S/.32</p>
+            </div>
+            <div class="producto">
                 <img src="imagenes/batman1.webp" alt="Figura Funko Pop de Batman" loading="lazy">
+                <h3>Batman</h3>
+                <p>Precio: S/.32</p>
+            </div>
+            <div class="producto">
                 <img src="imagenes/spidermanmorales1.jpg" alt="Figura Funko Pop de Spiderman Morales" loading="lazy">
+                <h3>Miles</h3>
+                <p>Precio: S/.30</p>
+            </div>
+            <div class="producto">
                 <img src="imagenes/zoro1.jpg" alt="Figura Funko Pop de Zoro" loading="lazy">
-                <img src="imagenes/jinbts1.webp" alt="Figura Funko Pop de Jin, personaje de BTS" loading="lazy">
-                <img src="imagenes/stich1.webp" alt="Figura Funko Pop de Stich" loading="lazy">
+                <h3>Zoro</h3>
+                <p>Precio: S/.32</p>
             </div>
-            <button id="prev">Anterior</button>
-            <button id="next">Siguiente</button>
-        </section>
+        </div>
+    </section>
 
-        <section id="productos-container">
-            <h2>Productos Destacados</h2>
-            <div class="productos-container">
-                <div class="producto">
-                    <img src="imagenes/luffy1.jpg" alt="Figura Funko Pop de Luffy, personaje de One Piece" loading="lazy">
-                    <h3>Luffy</h3>
-                    <p>Precio: S/.32</p>
-                </div>
-                <div class="producto">
-                    <img src="imagenes/batman1.webp" alt="Figura Funko Pop de Batman" loading="lazy">
-                    <h3>Batman</h3>
-                    <p>Precio: S/.32</p>
-                </div>
-                <div class="producto">
-                    <img src="imagenes/spidermanmorales1.jpg" alt="Figura Funko Pop de Spiderman Morales" loading="lazy">
-                    <h3>Miles</h3>
-                    <p>Precio: S/.30</p>
-                </div>
-                <div class="producto">
-                    <img src="imagenes/zoro1.jpg" alt="Figura Funko Pop de Zoro" loading="lazy">
-                    <h3>Zoro</h3>
-                    <p>Precio: S/.30</p>
-                </div>
-            </div>
-        </section>
+    <section class="testimonios">
+        <h2>Testimonios de Clientes</h2>
+        <p class="testimonio">"Me encantan los funkos de JoFraPop, ¡siempre traen los más exclusivos!" - Kris</p>
+        <p class="testimonio">"Un servicio excepcional y productos de calidad." - Ana</p>
+        <p class="testimonio">"Compré un funko de Zoro y llegó en perfectas condiciones." - Olga</p>
+    </section>
 
-        <section class="testimonios">
-            <h2>Testimonios de Clientes</h2>
-            <p class="testimonio">"Me encantan los funkos de JoFraPop, ¡siempre traen los más exclusivos!" - Kris</p>
-            <p class="testimonio">"Un servicio excepcional y productos de calidad." - Ana</p>
-            <p class="testimonio">"Compré un funko de Zoro y llegó en perfectas condiciones." - Olga</p>
-        </section>
-
-        <footer>
-            <p>&copy; 2024 Todos los derechos reservados.</p>
-            <div class="redes-sociales">
-                <a href="https://www.instagram.com/invites/contact/?igsh=1aifeluu4fsbq&utm_content=vu468xr" target="_blank">
-                    <i class="fab fa-instagram"></i> Instagram
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=61560951741947&mibextid=ZbWKwL" target="_blank">
-                    <i class="fab fa-facebook"></i> Facebook
-                </a>
-                <a href="https://wa.me/51900426676" target="_blank">
-                    <i class="fab fa-whatsapp"></i> WhatsApp
-                </a>
-            </div>
-            <p>¿Tienes preguntas? ¡Contáctanos!</p>
-            <p><a href="https://forms.gle/W35HobGPKXQcbhRU9" target="_blank" class="enlace-formulario">Enviar Mensaje</a></p>
-        </footer>
-    </div>
+    <footer>
+        <p>&copy; 2024 Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/invites/contact/?igsh=1aifeluu4fsbq&utm_content=vu468xr" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61560951741947&mibextid=ZbWKwL" target="_blank">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a href="https://wa.me/51900426676" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+        <p>¿Tienes preguntas? ¡Contáctanos!</p>
+        <p><a href="https://forms.gle/W35HobGPKXQcbhRU9" target="_blank" class="enlace-formulario">Enviar Mensaje</a></p>
+    </footer>
 
     <script>
+        // Script para manejar el carrusel
         let index = 0;
         const images = document.querySelectorAll('#carrusel img');
         const totalImages = images.length;
@@ -119,6 +144,49 @@
         document.getElementById('next').addEventListener('click', showNextImage);
         document.getElementById('prev').addEventListener('click', showPrevImage);
     </script>
+    
+
+
+
+
+
+    <script>
+        // Script para manejar el modal pop-up
+        var modal = document.getElementById("promoModal");
+        var span = document.getElementsByClassName("close")[0];
+
+        // Mostrar el modal al cargar la página
+        window.onload = function() {
+            setTimeout(function() {
+                modal.style.display = "block";
+            }, 1000); // Aparece después de 1 segundo
+        };
+
+        // Cerrar el modal al hacer clic en el botón de cerrar
+        span.onclick = function() {
+            modal.style.display = "none";
+        };
+
+        // Cerrar el modal si el usuario hace clic fuera del mismo
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+
+
+
+<script>
+    // Script para manejar la barra flotante
+    var barra = document.getElementById("barraFlotante");
+    var closeBarra = document.getElementsByClassName("close-barra")[0];
+
+    // Cerrar la barra al hacer clic en el botón de cerrar
+    closeBarra.onclick = function() {
+        barra.style.display = "none";
+    };
+</script>
 </body>
 
 </html>
