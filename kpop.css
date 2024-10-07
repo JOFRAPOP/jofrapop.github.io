@@ -80,18 +80,18 @@ nav a:hover {
     justify-content: center;
     list-style: none;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     flex-wrap: wrap; /* Permitir que los elementos se ajusten en varias filas */
 }
 
 .categorias li {
-    margin: 0 15px;
+    margin: 0 9px;
 }
 
 .categorias li a {
     text-decoration: none;
     color: #ff77ff; /* Color rosado característico en los enlaces de categorías */
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     padding: 0;
 }
